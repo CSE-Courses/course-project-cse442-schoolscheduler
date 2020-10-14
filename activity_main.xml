@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="119dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="80dp"
+        android:text="Next 7 Days"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="97dp"
+        android:layout_height="27dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="80dp"
+        android:text="Tomorrow"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton5"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="40dp"
+        android:shadowColor="#FFFFFF"
+        android:text="ToggleButton1"
+        android:textColor="#6202EE"
+        android:textColorHighlight="#6202EE"
+        android:textColorHint="#6202EE"
+        android:textColorLink="#6202EE"
+        android:textOff="TASKS"
+        android:textOn="TASKS"
+        app:layout_constraintEnd_toStartOf="@+id/toggleButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ToggleButton
+        android:id="@+id/toggleButton"
+        android:layout_width="175dp"
+        android:layout_height="52dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="34dp"
+        android:shadowColor="#FFFFFF"
+        android:text="ToggleButton1"
+        android:textColor="#6202EE"
+        android:textColorHint="#6202EE"
+        android:textOff="PROJECTS"
+        android:textOn="PROJECTS"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/toggleButton5"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="69dp"
+        android:layout_height="26dp"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="315dp"
+        android:text="Today"
+        android:textColor="#424242"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toggleButton5" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
