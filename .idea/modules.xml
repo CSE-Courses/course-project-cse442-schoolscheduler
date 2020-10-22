@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/Navigation_Bar.iml" filepath="$PROJECT_DIR$/.idea/modules/Navigation_Bar.iml" group="Navigation_Bar" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Navigation_Bar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Navigation_Bar.app.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Navigation Bar/app" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/course-project-cse442-schoolscheduler3.Navigation_Bar.iml" filepath="$PROJECT_DIR$/.idea/modules/course-project-cse442-schoolscheduler3.Navigation_Bar.iml" />
     </modules>
   </component>
 </project>
