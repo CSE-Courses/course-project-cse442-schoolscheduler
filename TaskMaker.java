@@ -55,7 +55,7 @@ public class TaskMaker extends AppCompatActivity {
                 String theDay = dataIntent.getStringExtra("sendDay");
 
 
-                Intent intent = new Intent(TaskMaker.this,CalendarPage.class);
+                Intent intent = new Intent(TaskMaker.this,MainActivity.class);
                 intent.putExtra("sendTask",StoreTask);
                 intent.putExtra("sendTime",StoreTime);
 
