@@ -1,6 +1,10 @@
 include ':app'
 <<<<<<< HEAD
+<<<<<<< HEAD
 rootProject.name = "Navigation Bar"
 =======
 rootProject.name = "My Applicationtt"
 >>>>>>> task
+=======
+rootProject.name = "My Applicationtt"
+>>>>>>> 1f3cec36b936a5dd416d42b11778e65663844ad2

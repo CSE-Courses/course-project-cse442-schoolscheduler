@@ -1,0 +1,291 @@
+Index: .idea/compiler.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/compiler.xml	(date 1603326080000)
++++ .idea/compiler.xml	(date 1603326080000)
+@@ -0,0 +1,8 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="CompilerConfiguration">
++    <bytecodeTargetLevel>
++      <module name="Navigation_Bar.app" target="1.8" />
++    </bytecodeTargetLevel>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/vcs.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/vcs.xml	(date 1603326080000)
++++ .idea/vcs.xml	(date 1603326080000)
+@@ -0,0 +1,6 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="VcsDirectoryMappings">
++    <mapping directory="" vcs="Git" />
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"AndroidLayouts\">\n    <shared>\n      <config />\n    </shared>\n  </component>\n  <component name=\"ChangeListManager\">\n    <list default=\"true\" id=\"3c821c10-b149-4d01-a8ed-1f1e9c946c56\" name=\"Default Changelist\" comment=\"\" />\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\n  </component>\n  <component name=\"CodeStyleSettingsInfer\">\n    <option name=\"done\" value=\"true\" />\n  </component>\n  <component name=\"ExecutionTargetManager\" SELECTED_TARGET=\"Pixel_3\" />\n  <component name=\"ExternalProjectsData\">\n    <projectState path=\"$PROJECT_DIR$\">\n      <ProjectState />\n    </projectState>\n  </component>\n  <component name=\"ExternalProjectsManager\">\n    <system id=\"GRADLE\">\n      <state>\n        <projects_view />\n      </state>\n    </system>\n  </component>\n  <component name=\"ProjectCodeStyleSettingsMigration\">\n    <option name=\"version\" value=\"1\" />\n  </component>\n  <component name=\"ProjectId\" id=\"1it1hlj4gqvjPZ2ProKygImkLh1\" />\n  <component name=\"ProjectViewState\">\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\n    <option name=\"showExcludedFiles\" value=\"true\" />\n    <option name=\"showLibraryContents\" value=\"true\" />\n    <option name=\"showMembers\" value=\"true\" />\n  </component>\n  <component name=\"PropertiesComponent\">\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\n    <property name=\"android.sdk.path\" value=\"$USER_HOME$/AppData/Local/Android/Sdk\" />\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$\" />\n    <property name=\"settings.editor.selected.configurable\" value=\"AndroidSdkUpdater\" />\n  </component>\n  <component name=\"RunManager\">\n    <configuration default=\"true\" type=\"AndroidJUnit\" factoryName=\"Android JUnit\">\n      <option name=\"TEST_OBJECT\" value=\"class\" />\n      <option name=\"WORKING_DIRECTORY\" value=\"$MODULE_DIR$\" />\n      <method v=\"2\">\n        <option name=\"Android.Gradle.BeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n    <configuration name=\"app\" type=\"AndroidRunConfigurationType\" factoryName=\"Android App\">\n      <module name=\"app\" />\n      <option name=\"DEPLOY\" value=\"true\" />\n      <option name=\"DEPLOY_APK_FROM_BUNDLE\" value=\"false\" />\n      <option name=\"DEPLOY_AS_INSTANT\" value=\"false\" />\n      <option name=\"ARTIFACT_NAME\" value=\"\" />\n      <option name=\"PM_INSTALL_OPTIONS\" value=\"\" />\n      <option name=\"DYNAMIC_FEATURES_DISABLED_LIST\" value=\"\" />\n      <option name=\"ACTIVITY_EXTRA_FLAGS\" value=\"\" />\n      <option name=\"MODE\" value=\"default_activity\" />\n      <option name=\"CLEAR_LOGCAT\" value=\"false\" />\n      <option name=\"SHOW_LOGCAT_AUTOMATICALLY\" value=\"false\" />\n      <option name=\"SKIP_NOOP_APK_INSTALLATIONS\" value=\"true\" />\n      <option name=\"FORCE_STOP_RUNNING_APP\" value=\"true\" />\n      <option name=\"TARGET_SELECTION_MODE\" value=\"DEVICE_AND_SNAPSHOT_COMBO_BOX\" />\n      <option name=\"SELECTED_CLOUD_MATRIX_CONFIGURATION_ID\" value=\"-1\" />\n      <option name=\"SELECTED_CLOUD_MATRIX_PROJECT_ID\" value=\"\" />\n      <option name=\"DEBUGGER_TYPE\" value=\"Auto\" />\n      <Auto>\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\n        <option name=\"WORKING_DIR\" value=\"\" />\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\n      </Auto>\n      <Hybrid>\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\n        <option name=\"WORKING_DIR\" value=\"\" />\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\n      </Hybrid>\n      <Java />\n      <Native>\n        <option name=\"USE_JAVA_AWARE_DEBUGGER\" value=\"false\" />\n        <option name=\"SHOW_STATIC_VARS\" value=\"true\" />\n        <option name=\"WORKING_DIR\" value=\"\" />\n        <option name=\"TARGET_LOGGING_CHANNELS\" value=\"lldb process:gdb-remote packets\" />\n        <option name=\"SHOW_OPTIMIZED_WARNING\" value=\"true\" />\n      </Native>\n      <Profilers>\n        <option name=\"ADVANCED_PROFILING_ENABLED\" value=\"false\" />\n        <option name=\"STARTUP_CPU_PROFILING_ENABLED\" value=\"false\" />\n        <option name=\"STARTUP_CPU_PROFILING_CONFIGURATION_NAME\" value=\"Sample Java Methods\" />\n      </Profilers>\n      <option name=\"DEEP_LINK\" value=\"\" />\n      <option name=\"ACTIVITY_CLASS\" value=\"\" />\n      <method v=\"2\">\n        <option name=\"Android.Gradle.BeforeRunTask\" enabled=\"true\" />\n      </method>\n    </configuration>\n  </component>\n  <component name=\"SvnConfiguration\">\n    <configuration />\n  </component>\n  <component name=\"TaskManager\">\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\n      <changelist id=\"3c821c10-b149-4d01-a8ed-1f1e9c946c56\" name=\"Default Changelist\" comment=\"\" />\n      <created>1602712195498</created>\n      <option name=\"number\" value=\"Default\" />\n      <option name=\"presentableId\" value=\"Default\" />\n      <updated>1602712195498</updated>\n    </task>\n    <servers />\n  </component>\n  <component name=\"WindowStateProjectService\">\n    <state x=\"500\" y=\"152\" key=\"AndroidCreateXmlResourceDialog\" timestamp=\"1602714452638\">\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"689\" />\n    </state>\n    <state x=\"500\" y=\"152\" key=\"AndroidCreateXmlResourceDialog/0.0.1280.689@0.0.1280.689\" timestamp=\"1602714452638\" />\n    <state x=\"421\" y=\"100\" key=\"FileChooserDialogImpl\" timestamp=\"1602715379885\">\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"689\" />\n    </state>\n    <state x=\"421\" y=\"100\" key=\"FileChooserDialogImpl/0.0.1280.689@0.0.1280.689\" timestamp=\"1602715379885\" />\n    <state x=\"316\" y=\"0\" width=\"669\" height=\"689\" key=\"NewModule_or_Project.wizard\" timestamp=\"1602715398864\">\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"689\" />\n    </state>\n    <state x=\"316\" y=\"0\" width=\"669\" height=\"689\" key=\"NewModule_or_Project.wizard/0.0.1280.689@0.0.1280.689\" timestamp=\"1602715398864\" />\n    <state x=\"93\" y=\"93\" width=\"1095\" height=\"504\" key=\"com.android.tools.idea.avdmanager.AvdListDialog\" timestamp=\"1602712825917\">\n      <screen x=\"0\" y=\"0\" width=\"1280\" height=\"689\" />\n    </state>\n    <state x=\"93\" y=\"93\" width=\"1095\" height=\"504\" key=\"com.android.tools.idea.avdmanager.AvdListDialog/0.0.1280.689@0.0.1280.689\" timestamp=\"1602712825917\" />\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/workspace.xml	(revision 38d384d8d2b58823b8e1a2a0cd31fb07416f6de0)
++++ .idea/workspace.xml	(date 1603326387000)
+@@ -5,8 +5,43 @@
+       <config />
+     </shared>
+   </component>
++  <component name="AutoImportSettings">
++    <option name="autoReloadType" value="NONE" />
++  </component>
++  <component name="BranchesTreeState">
++    <expand>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++      <path>
++        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
++        <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
++      </path>
++    </expand>
++    <select />
++  </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="3c821c10-b149-4d01-a8ed-1f1e9c946c56" name="Default Changelist" comment="" />
++    <list default="true" id="3c821c10-b149-4d01-a8ed-1f1e9c946c56" name="Default Changelist" comment="">
++      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
++      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
++    </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+@@ -15,7 +50,7 @@
+   <component name="CodeStyleSettingsInfer">
+     <option name="done" value="true" />
+   </component>
+-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3" />
++  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
+   <component name="ExternalProjectsData">
+     <projectState path="$PROJECT_DIR$">
+       <ProjectState />
+@@ -27,21 +62,32 @@
+         <projects_view />
+       </state>
+     </system>
++  </component>
++  <component name="Git.Settings">
++    <option name="RECENT_BRANCH_BY_REPOSITORY">
++      <map>
++        <entry key="$PROJECT_DIR$" value="master" />
++      </map>
++    </option>
++    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+   </component>
+   <component name="ProjectCodeStyleSettingsMigration">
+     <option name="version" value="1" />
+   </component>
+   <component name="ProjectId" id="1it1hlj4gqvjPZ2ProKygImkLh1" />
++  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+   <component name="ProjectViewState">
+     <option name="hideEmptyMiddlePackages" value="true" />
+-    <option name="showExcludedFiles" value="true" />
+     <option name="showLibraryContents" value="true" />
+     <option name="showMembers" value="true" />
+   </component>
+   <component name="PropertiesComponent">
++    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
++    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
+     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
++    <property name="memory.settings.postsync.last.time.stamp" value="1603326079435" />
+     <property name="settings.editor.selected.configurable" value="AndroidSdkUpdater" />
+   </component>
+   <component name="RunManager">
+@@ -53,12 +99,13 @@
+       </method>
+     </configuration>
+     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App">
+-      <module name="app" />
++      <module name="Navigation_Bar.app" />
+       <option name="DEPLOY" value="true" />
+       <option name="DEPLOY_APK_FROM_BUNDLE" value="false" />
+       <option name="DEPLOY_AS_INSTANT" value="false" />
+       <option name="ARTIFACT_NAME" value="" />
+       <option name="PM_INSTALL_OPTIONS" value="" />
++      <option name="ALL_USERS" value="false" />
+       <option name="DYNAMIC_FEATURES_DISABLED_LIST" value="" />
+       <option name="ACTIVITY_EXTRA_FLAGS" value="" />
+       <option name="MODE" value="default_activity" />
+@@ -94,11 +141,16 @@
+       </Native>
+       <Profilers>
+         <option name="ADVANCED_PROFILING_ENABLED" value="false" />
++        <option name="STARTUP_PROFILING_ENABLED" value="false" />
+         <option name="STARTUP_CPU_PROFILING_ENABLED" value="false" />
+         <option name="STARTUP_CPU_PROFILING_CONFIGURATION_NAME" value="Sample Java Methods" />
++        <option name="STARTUP_NATIVE_MEMORY_PROFILING_ENABLED" value="false" />
++        <option name="NATIVE_MEMORY_SAMPLE_RATE_BYTES" value="2048" />
+       </Profilers>
+       <option name="DEEP_LINK" value="" />
+       <option name="ACTIVITY_CLASS" value="" />
++      <option name="SEARCH_ACTIVITY_IN_GLOBAL_SCOPE" value="false" />
++      <option name="SKIP_ACTIVITY_VALIDATION" value="false" />
+       <method v="2">
+         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+       </method>
+@@ -116,6 +168,17 @@
+       <updated>1602712195498</updated>
+     </task>
+     <servers />
++  </component>
++  <component name="Vcs.Log.Tabs.Properties">
++    <option name="TAB_STATES">
++      <map>
++        <entry key="MAIN">
++          <value>
++            <State />
++          </value>
++        </entry>
++      </map>
++    </option>
+   </component>
+   <component name="WindowStateProjectService">
+     <state x="500" y="152" key="AndroidCreateXmlResourceDialog" timestamp="1602714452638">
+Index: .idea/modules.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"ProjectModuleManager\">\n    <modules>\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/Navigation_Bar.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/Navigation_Bar.iml\" group=\"Navigation_Bar\" />\n      <module fileurl=\"file://$PROJECT_DIR$/.idea/modules/app/app.iml\" filepath=\"$PROJECT_DIR$/.idea/modules/app/app.iml\" group=\"Navigation Bar/app\" />\n    </modules>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/modules.xml	(revision 38d384d8d2b58823b8e1a2a0cd31fb07416f6de0)
++++ .idea/modules.xml	(date 1603326387000)
+@@ -2,8 +2,8 @@
+ <project version="4">
+   <component name="ProjectModuleManager">
+     <modules>
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Navigation_Bar.iml" filepath="$PROJECT_DIR$/.idea/modules/Navigation_Bar.iml" group="Navigation_Bar" />
+-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/app.iml" group="Navigation Bar/app" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/Navigation_Bar.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/Navigation_Bar.app.iml" />
++      <module fileurl="file://$PROJECT_DIR$/.idea/modules/course-project-cse442-schoolscheduler3.Navigation_Bar.iml" filepath="$PROJECT_DIR$/.idea/modules/course-project-cse442-schoolscheduler3.Navigation_Bar.iml" />
+     </modules>
+   </component>
+ </project>
+\ No newline at end of file
+Index: .idea/markdown-navigator.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/markdown-navigator.xml	(date 1603326080000)
++++ .idea/markdown-navigator.xml	(date 1603326080000)
+@@ -0,0 +1,46 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="MarkdownProjectSettings">
++    <PreviewSettings splitEditorLayout="SPLIT" splitEditorPreview="PREVIEW" useGrayscaleRendering="false" zoomFactor="1.0" maxImageWidth="0" synchronizePreviewPosition="true" highlightPreviewType="LINE" highlightFadeOut="5" highlightOnTyping="true" synchronizeSourcePosition="true" verticallyAlignSourceAndPreviewSyncPosition="true" showSearchHighlightsInPreview="true" showSelectionInPreview="true" lastLayoutSetsDefault="false">
++      <PanelProvider>
++        <provider providerId="com.vladsch.md.nav.editor.swing.html.panel" providerName="Default - Swing" />
++      </PanelProvider>
++    </PreviewSettings>
++    <ParserSettings gitHubSyntaxChange="false" correctedInvalidSettings="false" emojiShortcuts="1" emojiImages="0">
++      <PegdownExtensions>
++        <option name="ATXHEADERSPACE" value="true" />
++        <option name="FENCED_CODE_BLOCKS" value="true" />
++        <option name="INTELLIJ_DUMMY_IDENTIFIER" value="true" />
++        <option name="RELAXEDHRULES" value="true" />
++        <option name="STRIKETHROUGH" value="true" />
++        <option name="TABLES" value="true" />
++        <option name="TASKLISTITEMS" value="true" />
++      </PegdownExtensions>
++      <ParserOptions>
++        <option name="COMMONMARK_LISTS" value="true" />
++        <option name="EMOJI_SHORTCUTS" value="true" />
++        <option name="GFM_TABLE_RENDERING" value="true" />
++        <option name="PRODUCTION_SPEC_PARSER" value="true" />
++        <option name="SIM_TOC_BLANK_LINE_SPACER" value="true" />
++      </ParserOptions>
++    </ParserSettings>
++    <HtmlSettings headerTopEnabled="false" headerBottomEnabled="false" bodyTopEnabled="false" bodyBottomEnabled="false" addPageHeader="false" addAnchorLinks="true" anchorLinksWrapText="false" imageUriSerials="false" addDocTypeHtml="true" noParaTags="false" defaultUrlTitle="false" migratedPlantUml="false" migratedAnchorLinks="false" plantUmlConversion="0">
++      <GeneratorProvider>
++        <provider providerId="com.vladsch.md.nav.editor.text.html.generator" providerName="Unmodified HTML Generator" />
++      </GeneratorProvider>
++      <headerTop />
++      <headerBottom />
++      <bodyTop />
++      <bodyBottom />
++      <fencedCodeConversions />
++    </HtmlSettings>
++    <CssSettings previewScheme="UI_SCHEME" cssUri="" isCssUriEnabled="false" isCssUriSerial="true" isCssTextEnabled="false" isDynamicPageWidth="true">
++      <StylesheetProvider>
++        <provider providerId="com.vladsch.md.nav.editor.text.html.css" providerName="No Stylesheet" />
++      </StylesheetProvider>
++      <ScriptProviders />
++      <cssText />
++      <cssUriHistory />
++    </CssSettings>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/markdown-navigator-enh.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/markdown-navigator-enh.xml	(date 1603326080000)
++++ .idea/markdown-navigator-enh.xml	(date 1603326080000)
+@@ -0,0 +1,10 @@
++<?xml version="1.0" encoding="UTF-8"?>
++<project version="4">
++  <component name="MarkdownEnhProjectSettings">
++    <AnnotatorSettings targetHasSpaces="true" linkCaseMismatch="true" wikiCaseMismatch="true" wikiLinkHasDashes="true" notUnderWikiHome="true" targetNotWikiPageExt="true" notUnderSourceWikiHome="true" targetNameHasAnchor="true" targetPathHasAnchor="true" wikiLinkHasSlash="true" wikiLinkHasSubdir="true" wikiLinkHasOnlyAnchor="true" linkTargetsWikiHasExt="true" linkTargetsWikiHasBadExt="true" notUnderSameRepo="true" targetNotUnderVcs="false" linkNeedsExt="true" linkHasBadExt="true" linkTargetNeedsExt="true" linkTargetHasBadExt="true" wikiLinkNotInWiki="true" imageTargetNotInRaw="true" repoRelativeAcrossVcsRoots="true" multipleWikiTargetsMatch="true" unresolvedLinkReference="true" linkIsIgnored="true" anchorIsIgnored="true" anchorIsUnresolved="true" anchorLineReferenceIsUnresolved="true" anchorLineReferenceFormat="true" anchorHasDuplicates="true" abbreviationDuplicates="true" abbreviationNotUsed="true" attributeIdDuplicateDefinition="true" attributeIdNotUsed="true" footnoteDuplicateDefinition="true" footnoteUnresolved="true" footnoteDuplicates="true" footnoteNotUsed="true" macroDuplicateDefinition="true" macroUnresolved="true" macroDuplicates="true" macroNotUsed="true" referenceDuplicateDefinition="true" referenceUnresolved="true" referenceDuplicates="true" referenceNotUsed="true" referenceUnresolvedNumericId="true" enumRefDuplicateDefinition="true" enumRefUnresolved="true" enumRefDuplicates="true" enumRefNotUsed="true" enumRefLinkUnresolved="true" enumRefLinkDuplicates="true" simTocUpdateNeeded="true" simTocTitleSpaceNeeded="true" />
++    <HtmlExportSettings updateOnSave="false" parentDir="" targetDir="" cssDir="css" scriptDir="js" plainHtml="false" imageDir="" copyLinkedImages="false" imagePathType="0" targetPathType="2" targetExt="" useTargetExt="false" noCssNoScripts="false" useElementStyleAttribute="false" linkToExportedHtml="true" exportOnSettingsChange="true" regenerateOnProjectOpen="false" linkFormatType="HTTP_ABSOLUTE" />
++    <LinkMapSettings>
++      <textMaps />
++    </LinkMapSettings>
++  </component>
++</project>
+\ No newline at end of file
+Index: .idea/gradle.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<project version=\"4\">\n  <component name=\"GradleMigrationSettings\" migrationVersion=\"1\" />\n  <component name=\"GradleSettings\">\n    <option name=\"linkedExternalProjectsSettings\">\n      <GradleProjectSettings>\n        <option name=\"testRunner\" value=\"PLATFORM\" />\n        <option name=\"distributionType\" value=\"DEFAULT_WRAPPED\" />\n        <option name=\"externalProjectPath\" value=\"$PROJECT_DIR$\" />\n        <option name=\"gradleJvm\" value=\"1.8\" />\n        <option name=\"modules\">\n          <set>\n            <option value=\"$PROJECT_DIR$\" />\n            <option value=\"$PROJECT_DIR$/app\" />\n          </set>\n        </option>\n        <option name=\"resolveModulePerSourceSet\" value=\"false\" />\n      </GradleProjectSettings>\n    </option>\n  </component>\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+--- .idea/gradle.xml	(revision 38d384d8d2b58823b8e1a2a0cd31fb07416f6de0)
++++ .idea/gradle.xml	(date 1603326080000)
+@@ -15,6 +15,7 @@
+           </set>
+         </option>
+         <option name="resolveModulePerSourceSet" value="false" />
++        <option name="useQualifiedModuleNames" value="true" />
+       </GradleProjectSettings>
+     </option>
+   </component>

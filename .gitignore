@@ -12,6 +12,7 @@
 /captures
 .externalNativeBuild
 .cxx
+<<<<<<< HEAD
 node_modules/**/*
 .expo/*
 npm-debug.*
@@ -22,3 +23,6 @@ npm-debug.*
 *.mobileprovision
 *.orig.*
 web-build/
+=======
+local.properties
+>>>>>>> 1f3cec36b936a5dd416d42b11778e65663844ad2
