@@ -1,4 +1,4 @@
-package com.example.myapplicationtt;
+package com.example.TaskPage;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,21 +12,18 @@ import android.widget.ListView;
 import android.widget.ScrollView;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-
 import java.util.ArrayList;
 
 
-public class Task extends AppCompatActivity implements AdapterView.OnItemClickListener {
+public class Task extends AppCompatActivity {
     private TextView bg_empty, today;
-
+    private int Todaylist_size;
     private ListView lv;
     private ScrollView sv;
     private ArrayList<Model> modelArrayList;
     private CustomAdapter customAdapter;
-    private Button btnselect, btndeselect, btnnext;
-    private String[] animallist = new String[]{"Lion", "Tiger", "Leopard", "Cat"};
+    private String[] todaylist = new String[]{"CSE442 HW", "Math", "Project"};
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,13 +32,13 @@ public class Task extends AppCompatActivity implements AdapterView.OnItemClickLi
             //InputStream is = getResources().openRawResource(R.raw.task);//read from task file
             //String txt = readText(is);
             //if (txt.length() != 0) {
-                setContentView(R.layout.main_task_page);
-                //bg_empty.setText("Some tasks!");
+            setContentView(R.layout.main_task_page);
+            //bg_empty.setText("Some tasks!");
             //} else {
-                //setContentView(R.layout.activity_main2);
-                //bg_empty.setText("Tap on the plus to add new to-do items.");
-                //today.setText("");
-           // }
+            //setContentView(R.layout.activity_main2);
+            //bg_empty.setText("Tap on the plus to add new to-do items.");
+            //today.setText("");
+            // }
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -67,47 +64,39 @@ public class Task extends AppCompatActivity implements AdapterView.OnItemClickLi
          */
         // Gets linearlayout
 
-        //fab();
-
         lv = (ListView) findViewById(R.id.lv);
-
+        Todaylist_size = todaylist.length;
         // Gets the layout params that will allow you to resize the layout
         ViewGroup.LayoutParams params = lv.getLayoutParams();
         modelArrayList = getModel(false);
-        int size = modelArrayList.size();
+
 // Changes the height and width to the specified *pixels*
-        params.height = size*150;
+        params.height = Todaylist_size*140;
 
         lv.setLayoutParams(params);
         lv.requestLayout();
         customAdapter = new CustomAdapter(this, modelArrayList);
         lv.setAdapter(customAdapter);
 
-        lv.setOnItemClickListener(this);
+        //add button
+        fab();
     }
-
-
-    public void onItemClick(AdapterView<?> adapter, View v, int position,long arg3)
-    {
-        // based on the item clicked go to the relevant activity
-        //String clickedItem = (String)adapter.getItemAtPosition(position);
-        Toast.makeText(getApplicationContext(), ((TextView) v).getText(), Toast.LENGTH_SHORT).show();
-    }
-
+    //get the model list
     private ArrayList<Model> getModel(boolean isSelect) {
         ArrayList<Model> list = new ArrayList<>();
-        for (int i = 0; i < 4; i++) {
+        for (int i = 0; i < Todaylist_size; i++) {
             Model model = new Model();
             model.setSelected(isSelect);
-            model.setAnimal(animallist[i]);
+            model.setTask(todaylist[i]);
             list.add(model);
         }
         return list;
     }
-
-
-
-
+    //open Edit page
+    public void onItemClick(View view) {
+        Intent intent = new Intent(getApplicationContext(), EditTaskContent.class);
+        startActivity(intent);
+    }
     /*private void checktask() {
         try {
             InputStream is = getResources().openRawResource(R.raw.task);//read from task file
@@ -146,7 +135,7 @@ public class Task extends AppCompatActivity implements AdapterView.OnItemClickLi
 
 
     }*/
-/*
+
     public void fab() {
         // Register all the FABs with their IDs
         // This FAB button is the Parent
@@ -158,19 +147,10 @@ public class Task extends AppCompatActivity implements AdapterView.OnItemClickLi
         TextView TaskActionText;
         TaskActionText = findViewById(R.id.add_task_action_text);
 
-        // Now set all the FABs and all the action name
-        // texts as GONE
         TaskFab.setVisibility(View.GONE);
         TaskActionText.setVisibility(View.GONE);
-
-        // make the boolean variable as false, as all the
-        // action name texts and all the sub FABs are invisible
         isAllFabsVisible[0] = false;
 
-        // We will make all the FABs and action name texts
-        // visible only when Parent FAB button is clicked So
-        // we have to handle the Parent FAB button first, by
-        // using setOnClickListener you can see below
         AddFab.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
@@ -229,8 +209,10 @@ public class Task extends AppCompatActivity implements AdapterView.OnItemClickLi
      */
 
 
-
 }
+
+
+
 
 
 

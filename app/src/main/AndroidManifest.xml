@@ -9,6 +9,17 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.MyApplicationtt">
+        <activity
+            android:name=".AddNewTask"
+            android:label="Add"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".EditTaskContent"
+            android:label="Edit"
+            android:screenOrientation="portrait">
+
+        </activity>
         <activity android:name=".Task">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

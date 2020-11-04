@@ -1,36 +1,34 @@
-package com.example.myapplicationtt;
-
-import androidx.appcompat.app.AppCompatActivity;
+package com.example.TaskPage;
 
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.Toast;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import androidx.appcompat.app.AppCompatActivity;
 
-public class AddNewTask extends AppCompatActivity {
+public class EditTaskContent extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.new_task);
+        setContentView(R.layout.edit_task);
         back();
     }
 
     public void back(){
-        Button save = findViewById(R.id.savechangebutton);
+        Button save = findViewById(R.id.edit_savebutton);
 
         save.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-                        //Toast.makeText(Task.this, "Task Added", Toast.LENGTH_SHORT).show();
+                        Toast.makeText(com.example.myapplicationtt.EditTaskContent.this, "Changes Saved", Toast.LENGTH_SHORT).show();
                         openNewActivity();
                     }
                 });
 
     }
-
     public void openNewActivity() {
         Intent intent = new Intent(this, Task.class);
         startActivity(intent);
