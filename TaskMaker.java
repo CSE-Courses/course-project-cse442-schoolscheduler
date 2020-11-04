@@ -34,6 +34,9 @@ public class TaskMaker extends AppCompatActivity {
 
 
 
+
+
+
         BackToCal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -55,11 +58,12 @@ public class TaskMaker extends AppCompatActivity {
                 String theDay = dataIntent.getStringExtra("sendDay");
 
 
-                Intent intent = new Intent(TaskMaker.this,MainActivity.class);
+                Intent intent = new Intent(TaskMaker.this,CalendarPage.class);
                 intent.putExtra("sendTask",StoreTask);
                 intent.putExtra("sendTime",StoreTime);
-
-
+                intent.putExtra("sendYear",theYear);
+                intent.putExtra("sendMonth",theMonth);
+                intent.putExtra("sendDay",theDay);
 
 
                 startActivity(intent);
