@@ -9,7 +9,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".MainActivity">
+        <activity android:name=".pickRingTone"></activity>
+        <activity android:name=".Notifications" />
+        <activity android:name=".test" />
+        <activity android:name=".Profile" />
+        <activity android:name=".General" />
+        <activity android:name=".semesterChange" />
+        <activity android:name=".completedHomework" />
+        <activity android:name=".Setting" />
+        <activity android:name=".userLogin" />
+        <activity android:name=".userSignUp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
