@@ -8,6 +8,8 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.schoolscheduler.Setting;
+
 public class Profile extends AppCompatActivity {
 
     public static final String EXTRA_TEXT = "com.example.application.example.EXTRA_TEXT";
@@ -38,7 +40,7 @@ public class Profile extends AppCompatActivity {
         int number = Integer.parseInt(editNumber.getText().toString());
 
 
-        Intent done = new Intent(Profile.this,Setting.class);
+        Intent done = new Intent(Profile.this, Setting.class);
 //        done.putExtra(Intent.EXTRA_TEXT, name);
 //        done.putExtra(Intent.EXTRA_PHONE_NUMBER, name);
         startActivity(done);
