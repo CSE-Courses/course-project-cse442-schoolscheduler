@@ -1,5 +1,6 @@
 package com.example.schoolscheduler;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -9,6 +10,11 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.google.android.gms.tasks.OnCompleteListener;
+import com.google.android.gms.tasks.Task;
+import com.google.firebase.auth.AuthResult;
+import com.google.firebase.auth.FirebaseAuth;
+
 public class userSignUp extends AppCompatActivity {
 
     private EditText sUserEmail;
@@ -16,6 +22,7 @@ public class userSignUp extends AppCompatActivity {
     private EditText sReUserPw;
     private Button LogInButton;
     private Button signUpButton;
+    FirebaseAuth auth;
 
 
 
@@ -27,9 +34,11 @@ public class userSignUp extends AppCompatActivity {
         sUserEmail = (EditText) findViewById(R.id.SignUpEmail);
         sUserPw = (EditText) findViewById(R.id.SignUpPassword);
         sReUserPw = (EditText) findViewById(R.id.rePW);
-        Button signUpButton = (Button) findViewById(R.id.signUp);
+        signUpButton = (Button) findViewById(R.id.signUp);
         LogInButton = (Button) findViewById(R.id.gotologin);
+        auth = FirebaseAuth.getInstance();
 
+        //if(auth.getCurrentUser())
 
 
 
@@ -49,7 +58,19 @@ public class userSignUp extends AppCompatActivity {
                     Toast.makeText(userSignUp.this, "INVALID PASSWORD: MISSING CREDENTIAL", Toast.LENGTH_SHORT).show();
                 }
                 else{
-                    Toast.makeText(userSignUp.this, "SUCCESSFULLY CREATED ACCOUNT", Toast.LENGTH_SHORT).show();
+                    auth.createUserWithEmailAndPassword(inputEmail, inputPW).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
+                       @Override
+                       public void onComplete(@NonNull Task<AuthResult> task) {
+                           if(task.isSuccessful()){
+                               Toast.makeText(userSignUp.this, "SUCCESSFULLY CREATED ACCOUNT", Toast.LENGTH_SHORT).show();
+                               Intent transfer = new Intent(userSignUp.this, Setting.class);
+                               startActivity(transfer);
+                           }
+                           else{
+                               Toast.makeText(userSignUp.this, "THERE WAS A ERROR! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                           }
+                       }
+                    });
                     Intent transfer = new Intent(userSignUp.this, Setting.class);
                     startActivity(transfer);
                 }
