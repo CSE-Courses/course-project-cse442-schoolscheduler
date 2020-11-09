@@ -40,121 +40,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator-enh.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.name" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/App.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/CalendarPage.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/TaskMaker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/myapplicationtt/ExampleInstrumentedTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/androidTest/java/com/example/schoolscheduler/ExampleInstrumentedTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/androidTest/java/com/example/navigationbar/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/myapplicationtt/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/Main_Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationbar/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationbar/ui/gallery/GalleryFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationbar/ui/gallery/GalleryViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationbar/ui/home/HomeFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationbar/ui/home/HomeViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationbar/ui/slideshow/SlideshowFragment.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/navigationbar/ui/slideshow/SlideshowViewModel.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_launcher_foreground.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_assignment_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_book_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_favorite_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_grade_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_help_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_history_edu_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_home_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_settings_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/baseline_today_black_48dp.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_camera.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_gallery.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/ic_menu_slideshow.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/layer_card_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/layer_card_background_selected.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/planner.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/selector_card_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/side_nav_bar.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/drawable/star_empty.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/app_bar_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/box.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/box_list.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/content_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_gallery.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_slideshow.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/frame_task.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/nav_header_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/activity_main_drawer.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/navigation/mobile_navigation.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/raw/task.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-night/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/myapplicationtt/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/schoolscheduler/ExampleUnitTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/navigationbar/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/favicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/icon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/assets/splash.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/babel.config.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/calendar_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/SemesterList.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/make_layout.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/settings.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/androidTest/java/com/example/schoolscheduler/ExampleInstrumentedTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/AndroidManifest.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/schoolscheduler/General.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/schoolscheduler/MainActivity.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/schoolscheduler/Profile.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/schoolscheduler/Setting.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/schoolscheduler/completedHomework.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/example/schoolscheduler/semesterChange.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable-v24/ic_launcher_foreground.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/backgroundicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/ic_launcher_background.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/mailicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/notificationicon.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/plannericon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/settingsicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/drawable/termicon.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_completed_homework.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_general.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_main.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_profile.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_semester_change.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/layout/activity_setting.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-anydpi-v26/ic_launcher_round.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-hdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-mdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/arrays.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/colors.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/strings.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/values/styles.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/res/xml/root_preferences.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/example/schoolscheduler/ExampleUnitTest.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.expo-shared/assets.json" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -171,6 +57,9 @@
     <system id="GRADLE">
       <state>
         <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
+        <task path="$PROJECT_DIR$/app">
           <activation />
         </task>
         <projects_view>
@@ -294,6 +183,14 @@
       <option name="presentableId" value="Default" />
       <updated>1604884495992</updated>
     </task>
+    <task id="LOCAL-00001" summary="Clean master">
+      <created>1604889581593</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1604889581594</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -308,6 +205,10 @@
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Clean master" />
+    <option name="LAST_COMMIT_MESSAGE" value="Clean master" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604887845866">
       <screen x="0" y="23" width="1440" height="834" />
@@ -317,6 +218,10 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
+    <state x="299" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604889586163">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889586163" />
     <state x="458" y="197" width="670" height="675" key="run.anything.popup" timestamp="1604884718637">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
