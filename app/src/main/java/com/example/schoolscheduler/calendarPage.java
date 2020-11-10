@@ -42,7 +42,7 @@ public class calendarPage extends AppCompatActivity {
         calToMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(calendarPage.this,TaskList.class);
+                Intent intent = new Intent(calendarPage.this,Main_Page.class);
                 startActivity(intent);
             }
         });

@@ -18,7 +18,7 @@
             android:layout_width="266dp"
             android:layout_height="54dp"
             android:layout_marginStart="52dp"
-            android:text="Button"
+            android:text="@string/calendarText"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintHorizontal_bias="0.215"

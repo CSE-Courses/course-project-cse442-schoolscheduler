@@ -31,17 +31,6 @@ public class Main_Page extends AppCompatActivity {
         });
 
 
-
-        NavigationView navigationView = findViewById(R.id.nav_view);
-        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
-            @Override
-            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-               // if (item.getItemId()==R.id.nav_view)
-
-
-                return true;
-            }
-        });
     }
 }
 
