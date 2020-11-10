@@ -40,12 +40,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskList.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/calendarPage.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/calendar_page.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/tasks_page.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/Main_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/Main_Page.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskList.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskList.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/calendarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/calendarPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/calendar_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/calendar_page.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -84,8 +84,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="layoutResourceFile" />
         <option value="Class" />
+        <option value="layoutResourceFile" />
       </list>
     </option>
   </component>
@@ -211,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604889581594</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="New Calendar code to work with. Still have to get back most of the code">
+      <created>1605038865750</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1605038865750</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -228,22 +235,27 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Clean master" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean master" />
+    <MESSAGE value="New Calendar code to work with. Still have to get back most of the code" />
+    <option name="LAST_COMMIT_MESSAGE" value="New Calendar code to work with. Still have to get back most of the code" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="575" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1605037366667">
+    <state x="575" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1605042588223">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="575" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605037366667" />
+    <state x="575" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605042588223" />
     <state x="734" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605035632390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="734" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605035632390" />
     <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1604887845866" />
-    <state x="689" y="170" key="AndroidCreateResourceFileDialog" timestamp="1605037436263">
+    <state x="689" y="170" key="AndroidCreateResourceFileDialog" timestamp="1605042727302">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="689" y="170" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605037436263" />
+    <state x="689" y="170" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605042727302" />
+    <state x="302" y="0" key="CommitChangelistDialog2" timestamp="1605038864716">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="302" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605038864716" />
     <state x="934" y="178" key="FileChooserDialogImpl" timestamp="1605034872214">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -256,11 +268,15 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
-    <state x="319" y="149" key="Vcs.Push.Dialog.v2" timestamp="1605029589190">
+    <state x="319" y="149" key="Vcs.Push.Dialog.v2" timestamp="1605038904997">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="319" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605029589190" />
+    <state x="319" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605038904997" />
     <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889586163" />
+    <state x="425" y="201" key="git4idea.merge.GitPullDialog" timestamp="1605038951048">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="201" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1605038951048" />
     <state x="458" y="197" width="670" height="675" key="run.anything.popup" timestamp="1604884718637">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
