@@ -40,8 +40,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_settings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/general.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/profile.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_general.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -103,7 +106,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/values-night" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable" />
     <property name="memory.settings.postsync.last.time.stamp" value="1604884496015" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
@@ -115,6 +118,7 @@
       <recent name="com.example.schoolscheduler" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\kenis\AndroidStudioProjects\course-project-cse442-schoolscheduler\app\src\main\res\drawable" />
       <recent name="$PROJECT_DIR$/app/src/main/res/values-night" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
       <recent name="$PROJECT_DIR$" />
@@ -211,7 +215,14 @@
       <option name="project" value="LOCAL" />
       <updated>1604889912992</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="settings page created (class,.xml)">
+      <created>1605053078810</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605053078810</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,24 +240,27 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Clean master" />
     <MESSAGE value="Clean master again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean master again" />
+    <MESSAGE value="settings page created (class,.xml)" />
+    <option name="LAST_COMMIT_MESSAGE" value="settings page created (class,.xml)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604887845866">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1604887845866" />
-    <state x="326" y="0" key="CommitChangelistDialog2" timestamp="1605028574764">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="319" y="0" key="CommitChangelistDialog2" timestamp="1605053077851">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state x="319" y="0" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1605053077851" />
     <state x="326" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605028574764" />
     <state x="300" y="85" key="SettingsEditor" timestamp="1604885278569">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
-    <state x="299" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604889915151">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="312" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605053126614">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state x="312" y="174" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1605053126614" />
     <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889915151" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605029058637">
       <screen x="0" y="23" width="1440" height="834" />
