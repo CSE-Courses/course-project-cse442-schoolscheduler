@@ -1,5 +1,10 @@
 <resources>
     <string name="app_name">App</string>
+    <string name="password">password</string>
+    <string name="email">email</string>
+    <string name="log_in">log_in</string>
+    <string name="sign_up">sign_up</string>
+    <string name="number_of_attempts_5">number_of_attempts_5</string>
 
     <!--task-->
     <string name="enter_title">New Task</string>
