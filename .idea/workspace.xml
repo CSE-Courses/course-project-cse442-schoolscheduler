@@ -40,16 +40,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/hashMD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/userSignUp.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_sign_up.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/google-services.json" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/test1.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/userLogin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_test1.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_user_login.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/test/java/com/example/schoolscheduler/ExampleUnitTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/test/java/com/example/schoolscheduler/ExampleUnitTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -98,17 +91,21 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="setting" />
+        <entry key="$PROJECT_DIR$" value="new_settings" />
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1k22iroZpAC5Jf8ytlk5ElRE3uR" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="Git.Branch.Popup.ShowAllRemotes" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -130,12 +127,49 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Android JUnit.ExampleUnitTest.hash_isCorrect">
+    <configuration name="ExampleUnitTest.addition_isCorrect" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="schoolscheduler.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.schoolscheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.schoolscheduler" />
+      <option name="MAIN_CLASS_NAME" value="com.example.schoolscheduler.ExampleUnitTest" />
+      <option name="METHOD_NAME" value="addition_isCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ExampleUnitTest.hash_isCorrect" type="AndroidJUnit" factoryName="Android JUnit" temporary="true" nameIsGenerated="true">
+      <module name="schoolscheduler.app" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.schoolscheduler.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.schoolscheduler" />
+      <option name="MAIN_CLASS_NAME" value="com.example.schoolscheduler.ExampleUnitTest" />
+      <option name="METHOD_NAME" value="hash_isCorrect" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <method v="2">
+        <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
+      </method>
+    </configuration>
     <configuration default="true" type="AndroidJUnit" factoryName="Android JUnit">
       <option name="TEST_OBJECT" value="class" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
       <method v="2">
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
+        <option name="BSP.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
     <configuration name="app" type="AndroidRunConfigurationType" factoryName="Android App" activateToolWindowBeforeRun="false">
@@ -195,6 +229,12 @@
         <option name="Android.Gradle.BeforeRunTask" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Android JUnit.ExampleUnitTest.hash_isCorrect" />
+        <item itemvalue="Android JUnit.ExampleUnitTest.addition_isCorrect" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -237,6 +277,7 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
     <MESSAGE value="Clean master" />
     <MESSAGE value="Clean master again" />
     <option name="LAST_COMMIT_MESSAGE" value="Clean master again" />
@@ -255,6 +296,22 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="326" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605028574764" />
+    <state width="657" height="227" key="GridCell.Tab.0.bottom" timestamp="1605079498340">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="657" height="227" key="GridCell.Tab.0.bottom/0.0.1504.963@0.0.1504.963" timestamp="1605079498340" />
+    <state width="657" height="227" key="GridCell.Tab.0.center" timestamp="1605079498340">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="657" height="227" key="GridCell.Tab.0.center/0.0.1504.963@0.0.1504.963" timestamp="1605079498340" />
+    <state width="657" height="227" key="GridCell.Tab.0.left" timestamp="1605079498338">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="657" height="227" key="GridCell.Tab.0.left/0.0.1504.963@0.0.1504.963" timestamp="1605079498338" />
+    <state width="657" height="227" key="GridCell.Tab.0.right" timestamp="1605079498340">
+      <screen x="0" y="0" width="1504" height="963" />
+    </state>
+    <state width="657" height="227" key="GridCell.Tab.0.right/0.0.1504.963@0.0.1504.963" timestamp="1605079498340" />
     <state x="300" y="85" key="SettingsEditor" timestamp="1604885278569">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
