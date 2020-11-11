@@ -17,9 +17,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".CalendarPage"></activity>
-        <activity android:name=".TaskList"></activity>
         <activity android:name=".CreateTask"></activity>
-
+        <activity android:name=".TaskList"></activity>
 
 
     </application>

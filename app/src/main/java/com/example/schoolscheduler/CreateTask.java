@@ -35,14 +35,27 @@ public class CreateTask extends AppCompatActivity implements TimePickerDialog.On
         makeToListBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CreateTask.this,TaskList.class);
+                Intent incomingDate = getIntent();
+                String year,month,day;  //Strings for date
+                year = incomingDate.getStringExtra("year");
+                month = incomingDate.getStringExtra("month");
+                day= incomingDate.getStringExtra("day");
+                int yearInt,monthInt,dayInt;  //Int for data
+                yearInt = Integer.parseInt(year);
+                monthInt = Integer.parseInt(month);
+                dayInt = Integer.parseInt(day);
+
+                priorKey = priorKey + yearInt + monthInt + dayInt;
+
+                Toast.makeText(CreateTask.this,priorKey+"++",Toast.LENGTH_SHORT);
+
+                Intent intent = new Intent(CreateTask.this,Main_Page.class);
                 startActivity(intent);
             }
         });
         timePicker.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
                 DialogFragment timePicker = new TimeDialog();
                 timePicker.show(getSupportFragmentManager(),"time picker");
             }
@@ -63,21 +76,21 @@ public class CreateTask extends AppCompatActivity implements TimePickerDialog.On
         }
         if (hour == 0 ){
             hour = 12;
-            String time = "Time Set To "+hour+":"+min+" AM";
+            String time = hour+":"+min+" AM";
             finalTime = time;
             Toast.makeText(CreateTask.this, time, Toast.LENGTH_LONG).show();
 
         }else if(hour >= 13){
             hour = hour - 12;
-            String time = "Time Set To "+hour+":"+min+" PM";
+            String time = hour+":"+min+" PM";
             finalTime = time;
             Toast.makeText(CreateTask.this, time, Toast.LENGTH_LONG).show();
         }else if(hour==12){
-            String time = "Time Set To "+hour+":"+min+" PM";
+            String time = hour+":"+min+" PM";
             finalTime = time;
             Toast.makeText(CreateTask.this, time, Toast.LENGTH_LONG).show();
         } else {
-            String time = "Time Set to "+hour+":"+min+" AM";
+            String time = hour+":"+min+" AM";
             finalTime = time;
             Toast.makeText(CreateTask.this, time, Toast.LENGTH_LONG).show();
         }

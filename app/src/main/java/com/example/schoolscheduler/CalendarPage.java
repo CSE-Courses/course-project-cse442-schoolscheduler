@@ -29,7 +29,11 @@ public class CalendarPage extends AppCompatActivity {
                 Toast.makeText(CalendarPage.this,(month+1)+"/"+day+"/"+year,Toast.LENGTH_SHORT).show();
 
                 Intent intent = new Intent(CalendarPage.this,CreateTask.class);
+                intent.putExtra("year",year+"");
+                intent.putExtra("month",month+"");
+                intent.putExtra("day",day+"");
                 startActivity(intent);
+
             }
         });
         //code for the button to go to Task page
