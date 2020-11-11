@@ -41,6 +41,9 @@
     <string name="empty_list">Tap on the plus to add new to-do items.</string>
 
     <!--task-->
+    <string name="back">Back</string>
+    <string name="calendarText">Calendar</string>
+    <string name="doneText">Done</string>
 
 
 </resources>
