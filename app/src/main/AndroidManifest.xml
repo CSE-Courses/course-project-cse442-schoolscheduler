@@ -13,8 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.schoolscheduler">
 
+<!--Login/Signup-->
         <activity android:name=".userSignUp"></activity>
-        
+      
+<!--MainPage-->
         <activity android:name=".userLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -22,8 +24,17 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+      
+      
+<!--Settings Part-->
+        <activity android:name=".profile"></activity>
+        <activity android:name=".general"></activity>
+        <activity android:name=".settings" ></activity>
+      
+      
+      
 
-       <!--Task Part-->
+<!--Task Part-->
         <activity
             android:name=".TaskPage.AddNewTask"
             android:label="Add"
@@ -40,7 +51,7 @@
             android:screenOrientation="portrait">
         </activity>
 
-        <!--Task Part-->
+        
 
     </application>
 
