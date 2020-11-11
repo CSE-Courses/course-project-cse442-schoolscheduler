@@ -1,12 +1,13 @@
 package com.example.schoolscheduler;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.schoolscheduler.TaskPage.Task;
 
 public class profile extends AppCompatActivity {
 
@@ -30,8 +31,8 @@ public class profile extends AppCompatActivity {
         done.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-//                Intent done = new Intent(profile.this,settings.class);
-//                startActivity(done);
+              Intent done = new Intent(profile.this, Task.class);
+              startActivity(done);
             }
         });
 
