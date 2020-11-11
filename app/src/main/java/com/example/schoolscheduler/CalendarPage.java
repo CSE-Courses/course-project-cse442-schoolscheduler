@@ -11,6 +11,9 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.example.schoolscheduler.TaskPage.AddNewTask;
+import com.example.schoolscheduler.TaskPage.Task;
+
 public class CalendarPage extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
@@ -28,7 +31,7 @@ public class CalendarPage extends AppCompatActivity {
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int day) {
                 Toast.makeText(CalendarPage.this,(month+1)+"/"+day+"/"+year,Toast.LENGTH_SHORT).show();
 
-                Intent intent = new Intent(CalendarPage.this,CreateTask.class);
+                Intent intent = new Intent(CalendarPage.this, AddNewTask.class);
                 intent.putExtra("year",year+"");
                 intent.putExtra("month",month+"");
                 intent.putExtra("day",day+"");
@@ -40,7 +43,7 @@ public class CalendarPage extends AppCompatActivity {
         calToTaskBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CalendarPage.this, TaskList.class);
+                Intent intent = new Intent(CalendarPage.this, Task.class);
                 startActivity(intent);
             }
         });
