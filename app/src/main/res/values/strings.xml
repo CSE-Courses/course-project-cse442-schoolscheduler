@@ -6,5 +6,41 @@
     <string name="sign_up">sign_up</string>
     <string name="number_of_attempts_5">number_of_attempts_5</string>
 
+    <!--task-->
+    <string name="enter_title">New Task</string>
+    <string name="subject_string">Subject:</string>
+    <string name="type_string">Type:</string>
+    <string name="due_string">Due:</string>
+    <string name="no_date_set_string">00/00/00</string>
+    <string name="no_time_set_string">00:00 AM</string>
+    <string name="change_date_string">Change Date</string>
+    <string name="change_time_string">Change Time</string>
+    <string name="priority_string">Priority: </string>
+    <string name="title_string">Title</string>
+    <string name="priority_low_string">Low</string>
+    <string name="priority_medium_string">Medium</string>
+    <string name="priority_high_string">High</string>
+    <string name="enter_details_string">Enter Details</string>
+    <string name="spinner_prompt">Select</string>
+    <string-array name="subject_list">
+        <item>English</item>
+        <item>Math</item>
+        <item>Chemistry</item>
+        <item>Physics</item>
+        <item>Economics</item>
+        <item>Computer Science</item>
+        <item>Biology</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="task_type_list">
+        <item>Homework</item>
+        <item>Project</item>
+        <item>Meeting</item>
+        <item>Other</item>
+    </string-array>
+    <string name="empty_list">Tap on the plus to add new to-do items.</string>
+
+    <!--task-->
+
 
 </resources>
