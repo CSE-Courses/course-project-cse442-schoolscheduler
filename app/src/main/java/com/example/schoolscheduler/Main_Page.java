@@ -1,17 +1,12 @@
 package com.example.schoolscheduler;
 
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-
-import com.google.android.material.internal.NavigationMenu;
-import com.google.android.material.navigation.NavigationView;
 
 public class Main_Page extends AppCompatActivity {
 
@@ -25,7 +20,7 @@ public class Main_Page extends AppCompatActivity {
         BtnToCal.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Main_Page.this, calendarPage.class);
+                Intent intent = new Intent(Main_Page.this, CalendarPage.class);
                 startActivity(intent);
             }
         });

@@ -10,11 +10,11 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
-public class calendarPage extends AppCompatActivity {
+public class CalendarPage extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.calendar_page);
+        setContentView(R.layout.calendar_page_layout);
 
         CalendarView myCalendarView = findViewById(R.id.calendarView);
         Button calToTaskBtn = findViewById(R.id.calToTaskBtn);
@@ -26,7 +26,7 @@ public class calendarPage extends AppCompatActivity {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int i, int i1, int i2) {
 
-                Intent intent = new Intent(calendarPage.this,TaskList.class);
+                Intent intent = new Intent(CalendarPage.this,CreateTask.class);
                 startActivity(intent);
             }
         });
@@ -34,7 +34,7 @@ public class calendarPage extends AppCompatActivity {
         calToTaskBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(calendarPage.this, TaskList.class);
+                Intent intent = new Intent(CalendarPage.this, TaskList.class);
                 startActivity(intent);
             }
         });
@@ -42,7 +42,7 @@ public class calendarPage extends AppCompatActivity {
         calToMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(calendarPage.this,Main_Page.class);
+                Intent intent = new Intent(CalendarPage.this,Main_Page.class);
                 startActivity(intent);
             }
         });

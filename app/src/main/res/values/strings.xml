@@ -2,6 +2,7 @@
     <string name="app_name">App</string>
     <string name="back">Back</string>
     <string name="calendarText">Calendar</string>
+    <string name="doneText">Done</string>
 
 
 </resources>

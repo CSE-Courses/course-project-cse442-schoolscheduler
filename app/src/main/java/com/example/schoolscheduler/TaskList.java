@@ -12,13 +12,13 @@ public class TaskList extends AppCompatActivity {
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.tasks_page);
+        setContentView(R.layout.tasks_page_layout);
 
         Button taskToCalBtn = findViewById(R.id.taskToCalBtn);
         taskToCalBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(TaskList.this,calendarPage.class);
+                Intent intent = new Intent(TaskList.this, CalendarPage.class);
                 startActivity(intent);
             }
         });
