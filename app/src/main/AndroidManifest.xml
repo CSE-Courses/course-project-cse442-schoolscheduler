@@ -10,7 +10,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.schoolscheduler">
-        <activity android:name=".TaskPage.Task">
+        <activity android:name=".Main_Page">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -29,11 +29,11 @@
             android:label="Edit"
             android:screenOrientation="portrait">
         </activity>
-        <!--activity
+        <activity
             android:name=".TaskPage.Task"
-            android:label="Edit"
+            android:label="Tasks"
             android:screenOrientation="portrait">
-        </activity-->
+        </activity>
 
         <!--Task Part-->
 
