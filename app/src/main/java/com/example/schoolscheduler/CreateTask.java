@@ -14,6 +14,8 @@ import androidx.fragment.app.DialogFragment;
 
 
 public class CreateTask extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
+    String timeAsString;
+    int priorKey;
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -50,29 +52,35 @@ public class CreateTask extends AppCompatActivity implements TimePickerDialog.On
 
     @Override
     public void onTimeSet(TimePicker timePicker, int hour, int minute) {
+        String finalTime;
         String min = minute+"";
+        priorKey =0;
+        priorKey = hour+minute;
+
+        // Prints out the right time as a Toast and sets the timeAsString variable
         if (minute<10){
             min = "0"+min;
         }
-
         if (hour == 0 ){
             hour = 12;
             String time = "Time Set To "+hour+":"+min+" AM";
+            finalTime = time;
             Toast.makeText(CreateTask.this, time, Toast.LENGTH_LONG).show();
 
         }else if(hour >= 13){
             hour = hour - 12;
             String time = "Time Set To "+hour+":"+min+" PM";
+            finalTime = time;
             Toast.makeText(CreateTask.this, time, Toast.LENGTH_LONG).show();
         }else if(hour==12){
             String time = "Time Set To "+hour+":"+min+" PM";
+            finalTime = time;
             Toast.makeText(CreateTask.this, time, Toast.LENGTH_LONG).show();
         } else {
             String time = "Time Set to "+hour+":"+min+" AM";
+            finalTime = time;
             Toast.makeText(CreateTask.this, time, Toast.LENGTH_LONG).show();
         }
-
-
-
+        timeAsString = finalTime;
     }
 }
