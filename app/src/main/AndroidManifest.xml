@@ -16,6 +16,26 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+       <!--Task Part-->
+        <activity
+            android:name=".TaskPage.AddNewTask"
+            android:label="Add"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".TaskPage.EditTaskContent"
+            android:label="Edit"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".TaskPage.Task"
+            android:label="Edit"
+            android:screenOrientation="portrait">
+        </activity>
+
+        <!--Task Part-->
+
     </application>
 
 </manifest>

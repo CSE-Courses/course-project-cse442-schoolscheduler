@@ -36,20 +36,40 @@
         <item name="GROUP_NODE:login" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </expand>
-    <select />
+    <select>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </select>
   </component>
   <component name="ChangeListManager">
-
-    <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
+    <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="test4">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/CustomAdapter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/EditTaskContent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Model.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Task.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_add.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_hw.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/edit_task.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/lv_item.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_task_page.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/new_task.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/integer.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
-
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -88,9 +108,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-
         <entry key="$PROJECT_DIR$" value="Dev" />
-
       </map>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -106,16 +124,20 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/values-night" />
-    <property name="memory.settings.postsync.last.time.stamp" value="1604884496015" />
+    <property name="memory.settings.postsync.last.time.stamp" value="1605057168060" />
     <property name="project.structure.last.edited" value="SDK Location" />
     <property name="project.structure.proportion" value="0.17" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
   <component name="RecentsManager">
+    <key name="android.template.-929694716">
+      <recent name="com.example.schoolscheduler" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/app/src/main/res/values-night" />
       <recent name="$PROJECT_DIR$/app/src/main/res/drawable" />
+      <recent name="C:\Users\kenis\AndroidStudioProjects\course-project-cse442-schoolscheduler\app\src\main\res\drawable" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -203,16 +225,21 @@
       <option name="project" value="LOCAL" />
       <updated>1604889581594</updated>
     </task>
-
     <task id="LOCAL-00002" summary="Clean master again">
       <created>1604889912992</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
       <updated>1604889912992</updated>
-
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="settings page created (class,.xml)">
+      <created>1605053078810</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1605053078810</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -229,35 +256,42 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Clean master" />
-
     <MESSAGE value="Clean master again" />
-    <option name="LAST_COMMIT_MESSAGE" value="Clean master again" />
-
+    <MESSAGE value="settings page created (class,.xml)" />
+    <option name="LAST_COMMIT_MESSAGE" value="settings page created (class,.xml)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604887845866">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1604887845866" />
-    <state x="326" y="0" key="CommitChangelistDialog2" timestamp="1605028574764">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="319" y="0" key="CommitChangelistDialog2" timestamp="1605053077851">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state x="319" y="0" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1605053077851" />
     <state x="326" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605028574764" />
+    <state x="131" y="95" key="MergeDialog" timestamp="1605057185794">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="131" y="95" key="MergeDialog/0.23.1440.834@0.23.1440.834" timestamp="1605057185794" />
     <state x="300" y="85" key="SettingsEditor" timestamp="1604885278569">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
-
-    <state x="299" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604889915151">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="312" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605053126614">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
+    <state x="312" y="174" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1605053126614" />
     <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889915151" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605029058637">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.833@0.23.1440.833" timestamp="1604890257890" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.834@0.23.1440.834" timestamp="1605029058637" />
-
+    <state x="90" y="105" key="git4idea.branch.GitSmartOperationDialog" timestamp="1605057180866">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="90" y="105" key="git4idea.branch.GitSmartOperationDialog/0.23.1440.834@0.23.1440.834" timestamp="1605057180866" />
     <state x="458" y="197" width="670" height="675" key="run.anything.popup" timestamp="1604884718637">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
