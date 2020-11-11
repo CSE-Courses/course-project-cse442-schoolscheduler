@@ -25,6 +25,24 @@ public class profile extends AppCompatActivity {
                 goBack();
             }
         });
+
+        Button gtoT = (Button)findViewById(R.id.generalTotask);
+        done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent done = new Intent(profile.this,settings.class);
+//                startActivity(done);
+            }
+        });
+
+        Button gtoc = (Button)findViewById(R.id.generalTocalender);
+        done.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+//                Intent done = new Intent(profile.this,settings.class);
+//                startActivity(done);
+            }
+        });
     }
 
     public void goBack(){

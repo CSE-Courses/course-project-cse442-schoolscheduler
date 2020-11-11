@@ -12,6 +12,7 @@
         android:layout_height="42dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:text="Grading System"
+        android:textColor="#4A4848"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
@@ -25,11 +26,33 @@
         android:layout_height="42dp"
         android:background="?android:attr/selectableItemBackgroundBorderless"
         android:text="Profile Change"
+        android:textColor="#4A4848"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.333"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/gradingSystemButton"
         app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/generalTotask"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="task"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/generalTocalender"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/generalTocalender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Calender"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.783"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
