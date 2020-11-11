@@ -27,17 +27,13 @@
         <activity android:name=".CalendarPage"></activity>
         <activity android:name=".CreateTask"></activity>
         <activity android:name=".TaskList"></activity>
-
-
+        <activity android:name=".Main_Page"></activity>
 
 
 <!--Settings Part-->
         <activity android:name=".profile"></activity>
         <activity android:name=".general"></activity>
         <activity android:name=".settings" ></activity>
-
-
-
 
 <!--Task Part-->
         <activity
