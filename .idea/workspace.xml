@@ -47,22 +47,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="test4">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/CustomAdapter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/EditTaskContent.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Model.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Task.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_add.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_hw.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main2.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/edit_task.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/lv_item.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_task_page.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/new_task.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/values/integer.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/markdown-navigator.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/markdown-navigator.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/SQLDatabase.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/test_database.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/Main_Page.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/Main_Page.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/EditTaskContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/EditTaskContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Task.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/new_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/new_task.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -239,7 +233,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605053078810</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="create a 'new_task' branch from 'dev'">
+      <created>1605058522111</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1605058522111</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -258,9 +259,14 @@
     <MESSAGE value="Clean master" />
     <MESSAGE value="Clean master again" />
     <MESSAGE value="settings page created (class,.xml)" />
-    <option name="LAST_COMMIT_MESSAGE" value="settings page created (class,.xml)" />
+    <MESSAGE value="create a 'new_task' branch from 'dev'" />
+    <option name="LAST_COMMIT_MESSAGE" value="create a 'new_task' branch from 'dev'" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="733" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1605060169765">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="733" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.834@0.23.1440.834" timestamp="1605060169765" />
     <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604887845866">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
@@ -270,6 +276,46 @@
     </state>
     <state x="319" y="0" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1605053077851" />
     <state x="326" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605028574764" />
+    <state width="1211" height="216" key="GridCell.Tab.0.bottom" timestamp="1605080196993">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state width="1211" height="216" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
+    <state width="1211" height="216" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1605080196993" />
+    <state width="1211" height="216" key="GridCell.Tab.0.center" timestamp="1605080196992">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state width="1211" height="216" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
+    <state width="1211" height="216" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1605080196992" />
+    <state width="1211" height="216" key="GridCell.Tab.0.left" timestamp="1605080196992">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state width="1211" height="216" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1605076687442" />
+    <state width="1211" height="216" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1605080196992" />
+    <state width="1211" height="216" key="GridCell.Tab.0.right" timestamp="1605080196993">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state width="1211" height="216" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
+    <state width="1211" height="216" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1605080196993" />
+    <state width="1211" height="216" key="GridCell.Tab.1.bottom" timestamp="1605080196994">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state width="1211" height="216" key="GridCell.Tab.1.bottom/0.23.1440.835@0.23.1440.835" timestamp="1605076687445" />
+    <state width="1211" height="216" key="GridCell.Tab.1.bottom/0.23.1440.836@0.23.1440.836" timestamp="1605080196994" />
+    <state width="1211" height="216" key="GridCell.Tab.1.center" timestamp="1605080196994">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state width="1211" height="216" key="GridCell.Tab.1.center/0.23.1440.835@0.23.1440.835" timestamp="1605076687444" />
+    <state width="1211" height="216" key="GridCell.Tab.1.center/0.23.1440.836@0.23.1440.836" timestamp="1605080196994" />
+    <state width="1211" height="216" key="GridCell.Tab.1.left" timestamp="1605080196994">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state width="1211" height="216" key="GridCell.Tab.1.left/0.23.1440.835@0.23.1440.835" timestamp="1605076687444" />
+    <state width="1211" height="216" key="GridCell.Tab.1.left/0.23.1440.836@0.23.1440.836" timestamp="1605080196993" />
+    <state width="1211" height="216" key="GridCell.Tab.1.right" timestamp="1605080196994">
+      <screen x="0" y="23" width="1440" height="836" />
+    </state>
+    <state width="1211" height="216" key="GridCell.Tab.1.right/0.23.1440.835@0.23.1440.835" timestamp="1605076687444" />
+    <state width="1211" height="216" key="GridCell.Tab.1.right/0.23.1440.836@0.23.1440.836" timestamp="1605080196994" />
     <state x="131" y="95" key="MergeDialog" timestamp="1605057185794">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
@@ -278,11 +324,11 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
-    <state x="312" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605053126614">
-      <screen x="0" y="0" width="1504" height="963" />
+    <state x="299" y="174" key="Vcs.Push.Dialog.v2" timestamp="1605058523499">
+      <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="312" y="174" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1605053126614" />
-    <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889915151" />
+    <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1605058523499" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605029058637">
       <screen x="0" y="23" width="1440" height="834" />
     </state>
@@ -296,5 +342,9 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="458" y="197" width="670" height="675" key="run.anything.popup/0.23.1440.834@0.23.1440.834" timestamp="1604884718637" />
+    <state x="468" y="181" width="670" height="676" key="search.everywhere.popup" timestamp="1605065146026">
+      <screen x="0" y="23" width="1440" height="834" />
+    </state>
+    <state x="468" y="181" width="670" height="676" key="search.everywhere.popup/0.23.1440.834@0.23.1440.834" timestamp="1605065146026" />
   </component>
 </project>

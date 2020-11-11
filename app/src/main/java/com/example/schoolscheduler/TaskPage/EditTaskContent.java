@@ -19,18 +19,17 @@ public class EditTaskContent extends AppCompatActivity {
 
     public void back(){
         Button save = findViewById(R.id.edit_savebutton);
-
         save.setOnClickListener(
                 new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
                         Toast.makeText(EditTaskContent.this, "Changes Saved", Toast.LENGTH_SHORT).show();
-                        openNewActivity();
+                        open();
                     }
                 });
 
     }
-    public void openNewActivity() {
+    public void open() {
         Intent intent = new Intent(this, Task.class);
         startActivity(intent);
     }
