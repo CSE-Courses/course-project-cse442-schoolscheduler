@@ -32,37 +32,30 @@
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:feature" type="e8cecc67:BranchNodeDescriptor" />
       </path>
-      <path>
-        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="GROUP_NODE:login" type="e8cecc67:BranchNodeDescriptor" />
-      </path>
     </expand>
     <select>
       <path>
         <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="REMOTE_ROOT" type="e8cecc67:BranchNodeDescriptor" />
         <item name="GROUP_NODE:origin" type="e8cecc67:BranchNodeDescriptor" />
-        <item name="BRANCH:origin/Dev" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="BRANCH:origin/master" type="e8cecc67:BranchNodeDescriptor" />
       </path>
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment=""/>
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/check_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable-v24/close_white.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/toolbar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/menu/todo.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/CalendarPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/CalendarPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/CreateTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/CreateTask.java" afterDir="false" />
-    <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="test4">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3_API_30]" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="device_and_snapshot_combo_box_target[Pixel_3a_API_30_x86]" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -90,15 +83,6 @@
         </projects_view>
       </state>
     </system>
-  </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="valueResourceFile" />
-        <option value="layoutResourceFile" />
-        <option value="Class" />
-      </list>
-    </option>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -283,28 +267,6 @@
       <option name="project" value="LOCAL" />
       <updated>1604889581594</updated>
     </task>
-    <task id="LOCAL-00002" summary="Clean master again">
-      <created>1604889912992</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1604889912992</updated>
-    </task>
-    <task id="LOCAL-00003" summary="settings page created (class,.xml)">
-      <created>1605053078810</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1605053078810</updated>
-    </task>
-    <task id="LOCAL-00004" summary="create a 'new_task' branch from 'dev'">
-      <created>1605058522111</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1605058522111</updated>
-    </task>
-    <option name="localTasksCounter" value="5" />
     <task id="LOCAL-00002" summary="New Calendar code to work with. Still have to get back most of the code">
       <created>1605038865750</created>
       <option name="number" value="00002" />
@@ -340,7 +302,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605063553142</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Cancel the default menu bar. Create a toolbar and add the delete/submit items in toolbar.">
+      <created>1605675941248</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1605675941248</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -373,62 +342,78 @@
     <MESSAGE value="Clean master again" />
     <MESSAGE value="settings page created (class,.xml)" />
     <MESSAGE value="create a 'new_task' branch from 'dev'" />
-    <option name="LAST_COMMIT_MESSAGE" value="create a 'new_task' branch from 'dev'" />
     <MESSAGE value="New Calendar code to work with. Still have to get back most of the code" />
     <MESSAGE value="Adds a task list with scroll class and layout, still need to add classes and times" />
     <MESSAGE value="Bug fixes from the last push forgot to change button names, center the text, and fix string text." />
     <MESSAGE value="Adds A TimeDialog class and sets time you want you Calendar Event" />
     <MESSAGE value="Set CalendarView to output the right dates on the OnClickListener.&#10;Made Event Class" />
-    <option name="LAST_COMMIT_MESSAGE" value="Set CalendarView to output the right dates on the OnClickListener.&#10;Made Event Class" />
+    <MESSAGE value="Cancel the default menu bar. Create a toolbar and add the delete/submit items in toolbar." />
+    <option name="LAST_COMMIT_MESSAGE" value="Cancel the default menu bar. Create a toolbar and add the delete/submit items in toolbar." />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="0" key="#app" timestamp="1605133685594">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="487" y="0" key="#app/0.0.1536.824@0.0.1536.824" timestamp="1605133685594" />
-    <state x="733" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1605060169765">
-      <screen x="0" y="23" width="1440" height="834" />
-    </state>
-    <state x="733" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.834@0.23.1440.834" timestamp="1605060169765" />
-    <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1604887845866"/>
-      <screen x="0" y="23" width="1440" height="834" />
     <state x="575" y="119" key="#com.intellij.ide.util.MemberChooser" timestamp="1605056978953">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="575" y="119" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1605056978953" />
+    <state x="733" y="153" key="#com.intellij.ide.util.MemberChooser/0.23.1440.834@0.23.1440.834" timestamp="1605060169765" />
     <state x="734" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1605035632390">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="719" y="191" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1504.963@0.0.1504.963" timestamp="1605051394218" />
     <state x="734" y="163" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605035632390" />
     <state x="688" y="188" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.1440.834@0.23.1440.834" timestamp="1604887845866" />
-    <state x="566" y="261" key="AndroidCreateXmlResourceDialog" timestamp="1605051615816">
-      <screen x="0" y="0" width="1504" height="963" />
+    <state x="500" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1605057168139">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="500" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605057168139" />
+    <state x="689" y="170" key="AndroidCreateResourceFileDialog" timestamp="1605052753055">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="689" y="170" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605052753055" />
+    <state x="606" y="199" key="AndroidCreateXmlResourceDialog" timestamp="1605053221102">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="566" y="261" key="AndroidCreateXmlResourceDialog/0.0.1504.963@0.0.1504.963" timestamp="1605051615816" />
-    <state x="326" y="0" key="CommitChangelistDialog2" timestamp="1605028574764">
+    <state x="606" y="199" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1605053221102" />
+    <state x="302" y="0" key="CommitChangelistDialog2" timestamp="1605063552174">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="319" y="0" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1605053077851" />
-    <state x="326" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605028574764" />
-    <state width="1211" height="216" key="GridCell.Tab.0.bottom" timestamp="1605080196993">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state x="302" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605063552174" />
+    <state x="934" y="178" key="FileChooserDialogImpl" timestamp="1605034872214">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state x="934" y="178" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605034872214" />
+    <state width="423" height="390" key="Git.Branch.Popup" timestamp="1605029606787">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="423" height="390" key="Git.Branch.Popup/0.0.1536.824@0.0.1536.824" timestamp="1605029606787" />
+    <state width="1492" height="210" key="GridCell.Tab.0.bottom" timestamp="1605062978646">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="1492" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605062978646" />
     <state width="1211" height="216" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
     <state width="1211" height="216" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1605080196993" />
-    <state width="1211" height="216" key="GridCell.Tab.0.center" timestamp="1605080196992">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state width="1492" height="210" key="GridCell.Tab.0.center" timestamp="1605062978645">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1492" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
     <state width="1211" height="216" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
     <state width="1211" height="216" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1605080196992" />
-    <state width="1211" height="216" key="GridCell.Tab.0.left" timestamp="1605080196992">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state width="1492" height="210" key="GridCell.Tab.0.left" timestamp="1605062978645">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1492" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
     <state width="1211" height="216" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1605076687442" />
     <state width="1211" height="216" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1605080196992" />
-    <state width="1211" height="216" key="GridCell.Tab.0.right" timestamp="1605080196993">
-      <screen x="0" y="23" width="1440" height="836" />
+    <state width="1492" height="210" key="GridCell.Tab.0.right" timestamp="1605062978645">
+      <screen x="0" y="0" width="1536" height="824" />
     </state>
+    <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
     <state width="1211" height="216" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
     <state width="1211" height="216" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1605080196993" />
     <state width="1211" height="216" key="GridCell.Tab.1.bottom" timestamp="1605080196994">
@@ -455,64 +440,20 @@
       <screen x="0" y="23" width="1440" height="834" />
     </state>
     <state x="131" y="95" key="MergeDialog/0.23.1440.834@0.23.1440.834" timestamp="1605057185794" />
-    <state x="500" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog" timestamp="1605057168139">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="500" y="160" key="#com.intellij.refactoring.typeMigration.ui.FailedConversionsDialog/0.0.1536.824@0.0.1536.824" timestamp="1605057168139" />
-    <state x="689" y="170" key="AndroidCreateResourceFileDialog" timestamp="1605052753055">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="689" y="170" key="AndroidCreateResourceFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1605052753055" />
-    <state x="606" y="199" key="AndroidCreateXmlResourceDialog" timestamp="1605053221102">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="606" y="199" key="AndroidCreateXmlResourceDialog/0.0.1536.824@0.0.1536.824" timestamp="1605053221102" />
-    <state x="302" y="0" key="CommitChangelistDialog2" timestamp="1605063552174">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="302" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605063552174" />
-    <state x="934" y="178" key="FileChooserDialogImpl" timestamp="1605034872214">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state x="934" y="178" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1605034872214" />
-    <state width="423" height="390" key="Git.Branch.Popup" timestamp="1605029606787">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="423" height="390" key="Git.Branch.Popup/0.0.1536.824@0.0.1536.824" timestamp="1605029606787" />
-    <state width="1492" height="210" key="GridCell.Tab.0.bottom" timestamp="1605062978646">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605062978646" />
-    <state width="1492" height="210" key="GridCell.Tab.0.center" timestamp="1605062978645">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
-    <state width="1492" height="210" key="GridCell.Tab.0.left" timestamp="1605062978645">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
-    <state width="1492" height="210" key="GridCell.Tab.0.right" timestamp="1605062978645">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
-    <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
     <state x="300" y="85" key="SettingsEditor" timestamp="1604885278569">
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
-    <state x="299" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604889915151">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="299" y="173" key="Vcs.Push.Dialog.v2" timestamp="1605675956862">
+      <screen x="0" y="23" width="1440" height="832" />
     </state>
     <state x="312" y="174" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1605053126614" />
-    <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1605058523499" />
-    <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605029058637"/>
-      <screen x="0" y="23" width="1440" height="834" />
-    <state x="319" y="149" key="Vcs.Push.Dialog.v2" timestamp="1605052324816">
-      <screen x="0" y="0" width="1536" height="824" />
-    </state>
+    <state x="319" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605052324816" />
+    <state x="299" y="173" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1605675956862" />
+    <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889586163" />
+    <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605029058637" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.833@0.23.1440.833" timestamp="1604890257890" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.834@0.23.1440.834" timestamp="1605029058637" />
-    <state x="319" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605052324816" />
-    <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889586163" />
     <state x="425" y="201" key="git4idea.merge.GitPullDialog" timestamp="1605038951048">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

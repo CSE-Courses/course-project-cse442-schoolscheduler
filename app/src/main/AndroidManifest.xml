@@ -13,8 +13,10 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.schoolscheduler">
 
+<!--Login/Signup-->
         <activity android:name=".userSignUp"></activity>
-        
+
+<!--MainPage-->
         <activity android:name=".userLogin">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -23,7 +25,13 @@
             </intent-filter>
         </activity>
 
-       <!--Task Part-->
+        <activity android:name=".Main_Page"></activity>
+
+
+<!--Settings Part-->
+
+
+<!--Task Part-->
         <activity
             android:name=".TaskPage.AddNewTask"
             android:label="Add"
@@ -40,7 +48,7 @@
             android:screenOrientation="portrait">
         </activity>
 
-        <!--Task Part-->
+
 
     </application>
 
