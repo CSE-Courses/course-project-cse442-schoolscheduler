@@ -1,8 +1,10 @@
 package com.example.schoolscheduler.TaskPage;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
 
+import com.example.schoolscheduler.CalendarPage;
 import com.example.schoolscheduler.CreateTask;
 import com.example.schoolscheduler.R;
 import com.example.schoolscheduler.SQLDatabase;
@@ -14,12 +16,14 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CalendarView;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
 
 public class AddNewTask extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
-
+    private static final String TAG = "AddNewTask";
     EditText Title, Details;
     private final String DB_NAME = "MyDBB.db";
     private String TABLE_NAME = "MyTablee";
@@ -32,6 +36,14 @@ public class AddNewTask extends AppCompatActivity implements TimePickerDialog.On
         setContentView(R.layout.new_task);
 
         Button timePick = (Button) findViewById(R.id.timeButton);
+        Button datePicker = (Button) findViewById(R.id.new_date_picker_button);
+        TextView dateDisplay = (TextView) findViewById(R.id.new_date);
+        Intent incomingData = getIntent();
+        String date = incomingData.getStringExtra("wholeDay");
+        dateDisplay.setText(date);
+
+
+
 
         Stetho.initializeWithDefaults(this);
         DB = new SQLDatabase(this, DB_NAME, null, DB_VERSION, TABLE_NAME);
@@ -45,6 +57,16 @@ public class AddNewTask extends AppCompatActivity implements TimePickerDialog.On
                 timePicker.show(getSupportFragmentManager(),"time picker");
             }
         });
+        datePicker.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(AddNewTask.this, CalendarPage.class);
+                startActivity(intent);
+            }
+        });
+
+
+
 
     }
     //go back to main page

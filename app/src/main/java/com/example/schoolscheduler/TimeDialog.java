@@ -11,6 +11,7 @@ import androidx.fragment.app.FragmentManager;
 import java.util.Calendar;
 
 public class TimeDialog extends DialogFragment {
+    private static final String TAG = "TimeDialog";
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
         //get hour and minute of day using a calendar util

@@ -11,7 +11,7 @@
     <string name="subject_string">Subject:</string>
     <string name="type_string">Type:</string>
     <string name="due_string">Due:</string>
-    <string name="no_date_set_string">00/00/00</string>
+    <string name="no_date_set_string">00/00/0000</string>
     <string name="no_time_set_string">00:00 AM</string>
     <string name="change_date_string">Change Date</string>
     <string name="change_time_string">Change Time</string>

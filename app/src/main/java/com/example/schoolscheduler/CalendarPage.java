@@ -2,6 +2,7 @@ package com.example.schoolscheduler;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
@@ -15,10 +16,12 @@ import com.example.schoolscheduler.TaskPage.AddNewTask;
 import com.example.schoolscheduler.TaskPage.Task;
 
 public class CalendarPage extends AppCompatActivity {
+    private static final String TAG = "CalendarPage";
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.calendar_page_layout);
+
 
         CalendarView myCalendarView = findViewById(R.id.calendarView);
         Button calToTaskBtn = findViewById(R.id.calToTaskBtn);
@@ -30,11 +33,13 @@ public class CalendarPage extends AppCompatActivity {
             @Override
             public void onSelectedDayChange(@NonNull CalendarView calendarView, int year, int month, int day) {
                 Toast.makeText(CalendarPage.this,(month+1)+"/"+day+"/"+year,Toast.LENGTH_SHORT).show();
+                String wholeDate= (month+1)+"/"+day+"/"+year;
 
                 Intent intent = new Intent(CalendarPage.this, AddNewTask.class);
-                intent.putExtra("year",year+"");
-                intent.putExtra("month",month+"");
-                intent.putExtra("day",day+"");
+//                intent.putExtra("year",year+"");
+//                intent.putExtra("month",month+"");
+//                intent.putExtra("day",day+"");
+                intent.putExtra("wholeDay",wholeDate);
                 startActivity(intent);
 
             }
@@ -51,8 +56,12 @@ public class CalendarPage extends AppCompatActivity {
         calToMainBtn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(CalendarPage.this,Main_Page.class);
-                startActivity(intent);
+                if(getCallingActivity() != null){
+                    Log.d(TAG,getCallingActivity().getClassName());
+                }
+
+
+
             }
         });
 
