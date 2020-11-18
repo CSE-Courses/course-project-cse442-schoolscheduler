@@ -1,13 +1,20 @@
 package com.example.schoolscheduler.TaskPage;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+
 import com.example.schoolscheduler.R;
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.CheckBox;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import com.example.schoolscheduler.SQLDatabase;
 import com.facebook.stetho.Stetho;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -24,6 +31,8 @@ public class Task extends AppCompatActivity {
     private ListView lv;
     private ArrayList<Model> modelArrayList;
     private CustomAdapter customAdapter;
+    private Boolean bool;
+    private int idc;
 
 
     @Override
@@ -48,10 +57,22 @@ public class Task extends AppCompatActivity {
             lv.setLayoutParams(params);
             lv.requestLayout();
             customAdapter = new CustomAdapter(this, modelArrayList);
+
             lv.setAdapter(customAdapter);
         }
         //add button
         fab();
+        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        //itemClicked(findViewById(R.id.cb));
+        //bool =customAdapter.boo();
+        //getMenuInflater().inflate(R.menu.
+
+
+        check();
+
+
     }
 
     //get the model list
@@ -112,4 +133,81 @@ public class Task extends AppCompatActivity {
         startActivity(intent);
     }
 
+    // create an action bar button
+
+
+
+
+    @Override
+    public boolean onCreateOptionsMenu (Menu menu){
+        // Inflate the menu; this adds items to the action bar if it is present.
+
+        //bool = customAdapter.boo();
+
+
+        CheckBox chk = (CheckBox) findViewById(R.id.cb);
+
+        //if(bool){
+        Toast.makeText(Task.this,
+                "Checked", Toast.LENGTH_LONG).show();
+        getMenuInflater().inflate(R.menu.todo, menu);
+
+        findViewById(R.id.delete).setVisibility(View.GONE);
+        return true;
+        //}
+        //else{
+        // return false;
+        // }
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        // Handle action bar item clicks here. The action bar will
+        // automatically handle clicks on the Home/Up button, so long
+        // as you specify a parent activity in AndroidManifest.xml.
+        int id = item.getItemId();
+
+        //noinspection SimplifiableIfStatement
+        if (id == R.id.delete) {
+            idc = id;
+            Toast.makeText(Task.this, "Action clicked", Toast.LENGTH_LONG).show();
+            return true;
+        }
+
+        return super.onOptionsItemSelected(item);
+    }
+
+    public void itemClicked(View v) {
+        CheckBox checkBox = (CheckBox)v;
+        if (checkBox.isChecked()) {
+            //boo = true;
+            Toast.makeText(Task.this,
+                    "Checked", Toast.LENGTH_LONG).show();
+        }
+    }
+
+    public void check() {
+        //findViewById(R.id.delete).setVisibility(View.GONE);
+
+        CheckBox chk = (CheckBox) findViewById(R.id.cb);
+        if (chk != null) {
+            chk.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    //findViewById(R.id.delete).setVisibility(View.VISIBLE);
+
+                    //setVisibility(View.VISIBLE);
+                    Toast.makeText(Task.this,
+                            "Checked", Toast.LENGTH_LONG).show();
+
+                }
+            });
+        }
+    }
+
 }
+// create an action bar button
+
+
+
