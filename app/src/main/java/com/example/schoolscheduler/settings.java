@@ -14,7 +14,7 @@ public class settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-        Button general = (Button)findViewById(R.id.generalButton);
+        Button general = findViewById(R.id.generalButton);
         general.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
