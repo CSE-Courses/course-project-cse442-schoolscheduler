@@ -9,7 +9,7 @@
         android:icon="@drawable/close_white"
         app:showAsAction="always"/>
     <item
-        android:id="@+id/submit_button"
+        android:id="@+id/submit"
         android:orderInCategory="100"
         android:title="submit"
         android:icon="@drawable/check_white"

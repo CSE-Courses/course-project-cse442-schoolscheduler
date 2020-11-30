@@ -56,22 +56,29 @@ public class SQLDatabase extends SQLiteOpenHelper {
     }
 
     //add data
-    public void addData(String name, String elseInfo) {
+    public void addData(String name,String sub,String type, String elseInfo) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("TaskName", name);
+        values.put("Subject", sub);
+        values.put("Type", type);
         values.put("Details", elseInfo);
         db.insert(TableName, null, values);
     }
 
     //show task titles
-    public ArrayList<String> showOne() {
+    public ArrayList<ArrayList<String>> showOne() {
         SQLiteDatabase db = getReadableDatabase();
         Cursor c = db.rawQuery(" SELECT * FROM " + TableName, null);
-        ArrayList<String> arrayList = new ArrayList<>();
+        ArrayList<ArrayList<String>> arrayList = new ArrayList<>();
         while (c.moveToNext()) {
-            String id = c.getString(1);
-            arrayList.add(id);
+            ArrayList<String> list = new ArrayList<String>();
+            list.add(c.getString(1));
+            list.add(c.getString(2));
+            list.add(c.getString(3));
+            list.add(c.getString(5));
+            //list.add(c.getString(1));
+            arrayList.add(list);
         }
         return arrayList;
     }

@@ -8,11 +8,13 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Spinner;
 import android.widget.Toast;
 
 public class AddNewTask extends AppCompatActivity {
 
-    EditText Title, Details;
+    EditText Title,Subject, Type, Details;
+
     private final String DB_NAME = "MyDBB.db";
     private String TABLE_NAME = "MyTablee";
     private final int DB_VERSION = 1;
@@ -34,8 +36,12 @@ public class AddNewTask extends AppCompatActivity {
         Button save = findViewById(R.id.new_savechangebutton);
         Title = findViewById(R.id.new_title);
         Details = findViewById(R.id.new_details);
+        Subject = findViewById(R.id.new_subject_s);
+        Type = findViewById(R.id.new_type_s);
         save.setOnClickListener(view -> {
-            DB.addData(Title.getText().toString()
+            DB.addData(Title.getText().toString(),
+                    Subject.getText().toString(),
+                    Type.getText().toString()
                     , Details.getText().toString());
             Toast.makeText(AddNewTask.this, "Task Added", Toast.LENGTH_SHORT).show();
             open();
