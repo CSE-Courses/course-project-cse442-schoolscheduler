@@ -14,12 +14,12 @@ public class settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_settings);
 
-//        Button general = (Button)findViewById(R.id.generalButton);
-//        general.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(settings.this,general.class));
-//            }
-//        });
+        Button general = (Button)findViewById(R.id.generalButton);
+        general.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(settings.this,general.class));
+            }
+        });
     }
 }

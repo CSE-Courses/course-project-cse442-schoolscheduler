@@ -54,6 +54,8 @@
     <string name="back">Back</string>
     <string name="calendarText">Calendar</string>
     <string name="doneText">Done</string>
+    <string name="notification">Notification</string>
+    <string name="default_sound">Default Sound</string>
 
 
 </resources>
