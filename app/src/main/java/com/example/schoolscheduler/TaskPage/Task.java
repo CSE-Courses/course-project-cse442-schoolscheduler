@@ -26,6 +26,7 @@ import com.facebook.stetho.Stetho;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.Iterator;
 
 public class Task extends AppCompatActivity  {
     String TAG = Task.class.getSimpleName() + "My";
@@ -41,6 +42,9 @@ public class Task extends AppCompatActivity  {
     private CustomAdapterr customAdapter;
     private MenuItem submitOp;
     private MenuItem deleteOp;
+    private ArrayList<String> id_del;
+    private ArrayList<Integer> ttt;
+
 
 
     @Override
@@ -57,14 +61,14 @@ public class Task extends AppCompatActivity  {
             //list out all tasks
             lv = (ListView) findViewById(R.id.lv);
             ViewGroup.LayoutParams params = lv.getLayoutParams();
-            modelArrayList = getModel(false);
+            //modelArrayList = getModel(false);
 
             //Change the height of ListView
             params.height = Todaylist_size * 140;
 
             lv.setLayoutParams(params);
             lv.requestLayout();
-            customAdapter = new CustomAdapterr(this, modelArrayList);
+            customAdapter = new CustomAdapterr(this, arrayList);
 
             lv.setAdapter(customAdapter);
         }
@@ -74,19 +78,23 @@ public class Task extends AppCompatActivity  {
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        id_del = new ArrayList<>();
+        ttt = new ArrayList<>();
+
     }
 
     //get the model list
-    private ArrayList<Model> getModel(boolean isSelect) {
+    private ArrayList<Model> getModel(boolean isSelect, ArrayList<ArrayList<String>> arr) {
         ArrayList<Model> list = new ArrayList<>();
-        for (int i = 0; i < Todaylist_size; i++) {
+        for (int i = 0; i < arr.size(); i++) {
             Model model = new Model();
             model.setSelected(isSelect);
-            model.setn(arrayList.get(i).get(0));
-            model.sets(arrayList.get(i).get(1));
-            model.sett(arrayList.get(i).get(2));
-            model.setdu(arrayList.get(i).get(3));
-            model.setd(arrayList.get(i).get(4));
+            model.mseti(arrayList.get(i).get(0));
+            model.msetn(arrayList.get(i).get(1));
+            model.msets(arrayList.get(i).get(2));
+            model.msett(arrayList.get(i).get(3));
+            model.msetdu(arrayList.get(i).get(4));
+            model.msetd(arrayList.get(i).get(5));
             list.add(model);
         }
         return list;
@@ -152,8 +160,41 @@ public class Task extends AppCompatActivity  {
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
+        String tt = "";
         if (id == R.id.delete) {
-            Toast.makeText(Task.this, "Action clicked", Toast.LENGTH_LONG).show();
+            for (int k=0; k<id_del.size();k++) {
+                //tt = tt + id_del.get(k);
+                DB.delete(id_del.get(k));
+                int position = ttt.get(k);
+                   //arrayList.remove(position);
+                //arrayList.clear();
+                //modelArrayList.clear();
+
+            }
+            arrayList = DB.showOne();
+            for (int k=0; k<arrayList.size();k++){
+                tt = tt + arrayList.get(k).get(1);
+            }
+                customAdapter.notifyDataSetChanged();
+            Toast.makeText(Task.this, tt, Toast.LENGTH_LONG).show();
+
+            //for (int k=0; k<id_del.size();k++){
+                //DB.delete(id_del.get(k));
+                //Iterator itr = arrayList.iterator();
+                //while (itr.hasNext())
+                //{
+                   // ArrayList<String> x = (ArrayList<String>)itr.next();
+                    //if (x < 10)
+                        //itr.remove();
+                //}
+                //arrayList.remove(position);
+                //arrayList = DB.showOne();
+                //customAdapter.notifyItemRemoved(position);
+            //}
+
+            //id_del.clear();
+            Intent intent = new Intent(this, Task.class);
+            startActivity(intent);
             return true;
         }
         if (id == R.id.submit) {
@@ -173,11 +214,15 @@ public class Task extends AppCompatActivity  {
 
     private class CustomAdapterr extends BaseAdapter {
         private Context context;
+        public ArrayList<ArrayList<String>> arrayList;
         public  ArrayList<Model> modelArrayList;
 
-        public CustomAdapterr(Context context, ArrayList<Model> modelArrayList) {
+        public CustomAdapterr(Context context, ArrayList<ArrayList<String>> arrayList) {
             this.context = context;
-            this.modelArrayList = modelArrayList;
+            this.arrayList = arrayList;
+            //this.arrayList = DB.showOne();
+            //Todaylist_size = arrayList.size();
+            this.modelArrayList = getModel(false, this.arrayList);
         }
 
         @Override
@@ -219,17 +264,18 @@ public class Task extends AppCompatActivity  {
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
-            holder.TaskTitleView.setText(modelArrayList.get(position).getTask()[0]);
+            holder.TaskTitleView.setText(modelArrayList.get(position).getTask()[1]);
             holder.CheckBox.setChecked(modelArrayList.get(position).getSelected());
             Global mApp = ((Global)getApplicationContext());
             holder.TaskTitleView.setOnClickListener((v)->{
                 getNowArray.clear();
                 try {
-                    mApp.setn(modelArrayList.get(position).getTask()[0]);
-                    mApp.sets(modelArrayList.get(position).getTask()[1]);
-                    mApp.sett(modelArrayList.get(position).getTask()[2]);
-                    mApp.setdu(modelArrayList.get(position).getTask()[3]);
-                    mApp.setd(modelArrayList.get(position).getTask()[4]);
+                    mApp.seti(modelArrayList.get(position).getTask()[0]);
+                    mApp.setn(modelArrayList.get(position).getTask()[1]);
+                    mApp.sets(modelArrayList.get(position).getTask()[2]);
+                    mApp.sett(modelArrayList.get(position).getTask()[3]);
+                    mApp.setdu(modelArrayList.get(position).getTask()[4]);
+                    mApp.setd(modelArrayList.get(position).getTask()[5]);
 
                     Intent intent = new Intent(getApplicationContext(), EditTaskContent.class);
                     startActivity(intent);
@@ -244,6 +290,8 @@ public class Task extends AppCompatActivity  {
                 public void onClick(View v) {
                     deleteOp.setVisible(true);
                     submitOp.setVisible(true);
+                    id_del.add(modelArrayList.get(position).getTask()[0]);
+                    ttt.add(position);
                 }
             });
             return convertView;

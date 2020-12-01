@@ -74,6 +74,7 @@ public class SQLDatabase extends SQLiteOpenHelper {
         ArrayList<ArrayList<String>> arrayList = new ArrayList<>();
         while (c.moveToNext()) {
             ArrayList<String> list = new ArrayList<String>();
+            list.add(c.getString(0));
             list.add(c.getString(1));
             list.add(c.getString(2));
             list.add(c.getString(3));
@@ -83,5 +84,23 @@ public class SQLDatabase extends SQLiteOpenHelper {
             arrayList.add(list);
         }
         return arrayList;
+    }
+
+    //modify
+    public void modify(String id, String name, String subject, String type, String due, String detail) {
+        SQLiteDatabase db = getWritableDatabase();
+        db.execSQL(" UPDATE " + TableName
+                + " SET TaskName=" + "'" + name + "',"
+                + "Subject=" + "'" + subject + "',"
+                + "Type=" + "'" + type + "',"
+                + "Due=" + "'" + due + "',"
+                + "Details=" + "'" + detail + "'"
+                + " WHERE _id=" + "'" + id + "'");
+    }
+
+    //delete
+    public void delete(String id){
+        SQLiteDatabase dbase = getWritableDatabase();
+        dbase.delete(TableName,"_id = " + id,null);
     }
 }

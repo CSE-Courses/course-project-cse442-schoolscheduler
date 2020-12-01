@@ -1,10 +1,13 @@
 package com.example.schoolscheduler.TaskPage;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.example.schoolscheduler.SQLDatabase;
 import com.example.schoolscheduler.TaskPage.Task;
 
 import android.app.DatePickerDialog;
 import android.content.Intent;
+import android.database.sqlite.SQLiteDatabase;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
@@ -15,17 +18,27 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 import com.example.schoolscheduler.R;
+import com.facebook.stetho.Stetho;
 
 import java.util.Calendar;
 
 public class EditTaskContent extends AppCompatActivity {
+    private final String DB_NAME = "MyDBB.db";
+    private String TABLE_NAME = "MyTablee";
+    private final int DB_VERSION = 1;
     private TextView date;
     private DatePickerDialog.OnDateSetListener dateListener;
+    SQLDatabase DB;
+    private String id;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_task);
+        Stetho.initializeWithDefaults(this);
+        DB = new SQLDatabase(this, DB_NAME, null, DB_VERSION, TABLE_NAME);
+        DB.checkTable();
+        id = "";
         back();
         change();
 
@@ -65,22 +78,32 @@ public class EditTaskContent extends AppCompatActivity {
         EditText type = findViewById(R.id.edit_type_s);
         TextView due = findViewById(R.id.edit_date);
         EditText detail = findViewById(R.id.edit_details);
-        name.setText(s[0]);
-        sub.setText(s[1]);
-        type.setText(s[2]);
-        due.setText(s[3]);
-        detail.setText(s[4]);
+        id = s[0];
+        name.setText(s[1]);
+        sub.setText(s[2]);
+        type.setText(s[3]);
+        due.setText(s[4]);
+        detail.setText(s[5]);
     }
 
     public void back(){
         Button save = findViewById(R.id.edit_savebutton);
-        save.setOnClickListener(
-                new View.OnClickListener() {
-                    @Override
-                    public void onClick(View view) {
+        save.setOnClickListener(view ->
+                 {
                         Toast.makeText(EditTaskContent.this, "Changes Saved", Toast.LENGTH_SHORT).show();
+                        EditText name = findViewById(R.id.edit_title);
+                        EditText sub = findViewById(R.id.edit_subject_s);
+                        EditText type = findViewById(R.id.edit_type_s);
+                        TextView due = findViewById(R.id.edit_date);
+                        EditText detail = findViewById(R.id.edit_details);
+                        DB.modify(id
+                                ,name.getText().toString()
+                                ,sub.getText().toString()
+                                ,type.getText().toString()
+                                ,due.getText().toString()
+                                ,detail.getText().toString());
                         open();
-                    }
+
                 });
 
     }

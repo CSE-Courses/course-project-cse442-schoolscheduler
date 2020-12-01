@@ -3,6 +3,7 @@ package com.example.schoolscheduler.TaskPage;
 import android.app.Application;
 
 public class Global extends Application {
+    private String id;
     private String name;
     private String sub;
     private String type;
@@ -10,8 +11,11 @@ public class Global extends Application {
     private String detail;
 
     public String[] getS() {
-        String[] s = {name,sub,type,due,detail};
+        String[] s = {id,name,sub,type,due,detail};
         return s;
+    }
+    public void seti(String str) {
+        id = str;
     }
     public void setn(String str) {
         name = str;
