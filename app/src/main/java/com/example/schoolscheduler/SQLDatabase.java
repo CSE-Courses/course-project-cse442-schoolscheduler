@@ -56,12 +56,13 @@ public class SQLDatabase extends SQLiteOpenHelper {
     }
 
     //add data
-    public void addData(String name,String sub,String type, String elseInfo) {
+    public void addData(String name,String sub,String type, String due, String elseInfo) {
         SQLiteDatabase db = getWritableDatabase();
         ContentValues values = new ContentValues();
         values.put("TaskName", name);
         values.put("Subject", sub);
         values.put("Type", type);
+        values.put("Due", due);
         values.put("Details", elseInfo);
         db.insert(TableName, null, values);
     }
@@ -76,6 +77,7 @@ public class SQLDatabase extends SQLiteOpenHelper {
             list.add(c.getString(1));
             list.add(c.getString(2));
             list.add(c.getString(3));
+            list.add(c.getString(4));
             list.add(c.getString(5));
             //list.add(c.getString(1));
             arrayList.add(list);

@@ -37,49 +37,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Global.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_12_23_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_12_40_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_1_50_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_1_54_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_1_54_PM_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_1_54_PM_[Default_Changelist]2/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_2_05_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_7_49_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_8_09_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_8_09_PM_[Default_Changelist]1/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_8_10_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20,_8_13_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__12_23_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__12_40_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__1_50_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__1_54_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__1_54_PM__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__1_54_PM__Default_Changelist_2.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__2_05_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__7_49_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__8_09_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__8_09_PM__Default_Changelist_1.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__8_10_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Checkout_at_11_10_20__8_13_PM__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_20,_1_19_PM_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_11_10_20__1_19_PM__Default_Changelist_.xml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/SQLDatabase.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/SQLDatabase.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/CustomAdapter.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/EditTaskContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/EditTaskContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Global.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Model.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Model.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Task.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/hashMD5.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/userLogin.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/userSignUp.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/edit_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/edit_task.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/main_task_page.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/main_task_page.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/new_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/new_task.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/todo.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/todo.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/themes.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +305,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605675941248</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Add new features on the main page. Update and fix the the spinners on add and edit pages.">
+      <created>1606724018555</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1606724018555</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -379,7 +351,8 @@
     <MESSAGE value="Adds A TimeDialog class and sets time you want you Calendar Event" />
     <MESSAGE value="Set CalendarView to output the right dates on the OnClickListener.&#10;Made Event Class" />
     <MESSAGE value="Cancel the default menu bar. Create a toolbar and add the delete/submit items in toolbar." />
-    <option name="LAST_COMMIT_MESSAGE" value="Cancel the default menu bar. Create a toolbar and add the delete/submit items in toolbar." />
+    <MESSAGE value="Add new features on the main page. Update and fix the the spinners on add and edit pages." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add new features on the main page. Update and fix the the spinners on add and edit pages." />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="0" key="#app" timestamp="1605133685594">
@@ -425,62 +398,70 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state width="423" height="390" key="Git.Branch.Popup/0.0.1536.824@0.0.1536.824" timestamp="1605029606787" />
-    <state width="1296" height="212" key="GridCell.Tab.0.bottom" timestamp="1606719077979">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1314" height="212" key="GridCell.Tab.0.bottom" timestamp="1606797041858">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1492" height="210" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1605062978646" />
+    <state width="1314" height="212" key="GridCell.Tab.0.bottom/0.23.1440.828@0.23.1440.828" timestamp="1606797041858" />
     <state width="1296" height="212" key="GridCell.Tab.0.bottom/0.23.1440.829@0.23.1440.829" timestamp="1606719077979" />
     <state width="1249" height="212" key="GridCell.Tab.0.bottom/0.23.1440.830@0.23.1440.830" timestamp="1606569712218" />
     <state width="1211" height="216" key="GridCell.Tab.0.bottom/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
     <state width="1211" height="216" key="GridCell.Tab.0.bottom/0.23.1440.836@0.23.1440.836" timestamp="1605080196993" />
-    <state width="1296" height="212" key="GridCell.Tab.0.center" timestamp="1606719077978">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1314" height="212" key="GridCell.Tab.0.center" timestamp="1606797041858">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1492" height="210" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
+    <state width="1314" height="212" key="GridCell.Tab.0.center/0.23.1440.828@0.23.1440.828" timestamp="1606797041858" />
     <state width="1296" height="212" key="GridCell.Tab.0.center/0.23.1440.829@0.23.1440.829" timestamp="1606719077978" />
     <state width="1249" height="212" key="GridCell.Tab.0.center/0.23.1440.830@0.23.1440.830" timestamp="1606569712217" />
     <state width="1211" height="216" key="GridCell.Tab.0.center/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
     <state width="1211" height="216" key="GridCell.Tab.0.center/0.23.1440.836@0.23.1440.836" timestamp="1605080196992" />
-    <state width="1296" height="212" key="GridCell.Tab.0.left" timestamp="1606719077978">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1314" height="212" key="GridCell.Tab.0.left" timestamp="1606797041857">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1492" height="210" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
+    <state width="1314" height="212" key="GridCell.Tab.0.left/0.23.1440.828@0.23.1440.828" timestamp="1606797041857" />
     <state width="1296" height="212" key="GridCell.Tab.0.left/0.23.1440.829@0.23.1440.829" timestamp="1606719077978" />
     <state width="1249" height="212" key="GridCell.Tab.0.left/0.23.1440.830@0.23.1440.830" timestamp="1606569712217" />
     <state width="1211" height="216" key="GridCell.Tab.0.left/0.23.1440.835@0.23.1440.835" timestamp="1605076687442" />
     <state width="1211" height="216" key="GridCell.Tab.0.left/0.23.1440.836@0.23.1440.836" timestamp="1605080196992" />
-    <state width="1296" height="212" key="GridCell.Tab.0.right" timestamp="1606719077978">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1314" height="212" key="GridCell.Tab.0.right" timestamp="1606797041858">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
     <state width="1492" height="210" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1605062978645" />
+    <state width="1314" height="212" key="GridCell.Tab.0.right/0.23.1440.828@0.23.1440.828" timestamp="1606797041858" />
     <state width="1296" height="212" key="GridCell.Tab.0.right/0.23.1440.829@0.23.1440.829" timestamp="1606719077978" />
     <state width="1249" height="212" key="GridCell.Tab.0.right/0.23.1440.830@0.23.1440.830" timestamp="1606569712218" />
     <state width="1211" height="216" key="GridCell.Tab.0.right/0.23.1440.835@0.23.1440.835" timestamp="1605076687443" />
     <state width="1211" height="216" key="GridCell.Tab.0.right/0.23.1440.836@0.23.1440.836" timestamp="1605080196993" />
-    <state width="1296" height="212" key="GridCell.Tab.1.bottom" timestamp="1606719077980">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1314" height="212" key="GridCell.Tab.1.bottom" timestamp="1606797041860">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
+    <state width="1314" height="212" key="GridCell.Tab.1.bottom/0.23.1440.828@0.23.1440.828" timestamp="1606797041860" />
     <state width="1296" height="212" key="GridCell.Tab.1.bottom/0.23.1440.829@0.23.1440.829" timestamp="1606719077980" />
     <state width="1249" height="212" key="GridCell.Tab.1.bottom/0.23.1440.830@0.23.1440.830" timestamp="1606569712223" />
     <state width="1211" height="216" key="GridCell.Tab.1.bottom/0.23.1440.835@0.23.1440.835" timestamp="1605076687445" />
     <state width="1211" height="216" key="GridCell.Tab.1.bottom/0.23.1440.836@0.23.1440.836" timestamp="1605080196994" />
-    <state width="1296" height="212" key="GridCell.Tab.1.center" timestamp="1606719077980">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1314" height="212" key="GridCell.Tab.1.center" timestamp="1606797041859">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
+    <state width="1314" height="212" key="GridCell.Tab.1.center/0.23.1440.828@0.23.1440.828" timestamp="1606797041859" />
     <state width="1296" height="212" key="GridCell.Tab.1.center/0.23.1440.829@0.23.1440.829" timestamp="1606719077980" />
     <state width="1249" height="212" key="GridCell.Tab.1.center/0.23.1440.830@0.23.1440.830" timestamp="1606569712219" />
     <state width="1211" height="216" key="GridCell.Tab.1.center/0.23.1440.835@0.23.1440.835" timestamp="1605076687444" />
     <state width="1211" height="216" key="GridCell.Tab.1.center/0.23.1440.836@0.23.1440.836" timestamp="1605080196994" />
-    <state width="1296" height="212" key="GridCell.Tab.1.left" timestamp="1606719077979">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1314" height="212" key="GridCell.Tab.1.left" timestamp="1606797041859">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
+    <state width="1314" height="212" key="GridCell.Tab.1.left/0.23.1440.828@0.23.1440.828" timestamp="1606797041859" />
     <state width="1296" height="212" key="GridCell.Tab.1.left/0.23.1440.829@0.23.1440.829" timestamp="1606719077979" />
     <state width="1249" height="212" key="GridCell.Tab.1.left/0.23.1440.830@0.23.1440.830" timestamp="1606569712218" />
     <state width="1211" height="216" key="GridCell.Tab.1.left/0.23.1440.835@0.23.1440.835" timestamp="1605076687444" />
     <state width="1211" height="216" key="GridCell.Tab.1.left/0.23.1440.836@0.23.1440.836" timestamp="1605080196993" />
-    <state width="1296" height="212" key="GridCell.Tab.1.right" timestamp="1606719077980">
-      <screen x="0" y="23" width="1440" height="829" />
+    <state width="1314" height="212" key="GridCell.Tab.1.right" timestamp="1606797041859">
+      <screen x="0" y="23" width="1440" height="828" />
     </state>
+    <state width="1314" height="212" key="GridCell.Tab.1.right/0.23.1440.828@0.23.1440.828" timestamp="1606797041859" />
     <state width="1296" height="212" key="GridCell.Tab.1.right/0.23.1440.829@0.23.1440.829" timestamp="1606719077980" />
     <state width="1249" height="212" key="GridCell.Tab.1.right/0.23.1440.830@0.23.1440.830" timestamp="1606569712219" />
     <state width="1211" height="216" key="GridCell.Tab.1.right/0.23.1440.835@0.23.1440.835" timestamp="1605076687444" />
@@ -494,11 +475,12 @@
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1606568349144" />
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
-    <state x="299" y="173" key="Vcs.Push.Dialog.v2" timestamp="1605675956862">
-      <screen x="0" y="23" width="1440" height="832" />
+    <state x="299" y="172" key="Vcs.Push.Dialog.v2" timestamp="1606724034574">
+      <screen x="0" y="23" width="1440" height="829" />
     </state>
     <state x="312" y="174" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1605053126614" />
     <state x="319" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1605052324816" />
+    <state x="299" y="172" key="Vcs.Push.Dialog.v2/0.23.1440.829@0.23.1440.829" timestamp="1606724034573" />
     <state x="299" y="173" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1605675956862" />
     <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889586163" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605029058637" />

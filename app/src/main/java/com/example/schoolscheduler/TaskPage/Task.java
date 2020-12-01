@@ -33,19 +33,13 @@ public class Task extends AppCompatActivity  {
     private String TABLE_NAME = "MyTablee";
     private final int DB_VERSION = 1;
     SQLDatabase DB;
-    EditText Name;
-    String text;
-
     ArrayList<ArrayList<String>> arrayList = new ArrayList<>();
     ArrayList<String> getNowArray = new ArrayList<>();
     private int Todaylist_size;
     private ListView lv;
     private ArrayList<Model> modelArrayList;
     private CustomAdapterr customAdapter;
-    private Boolean bool;
-    private int idc;
     private MenuItem submitOp;
-
     private MenuItem deleteOp;
 
 
@@ -76,13 +70,9 @@ public class Task extends AppCompatActivity  {
         }
         //add button
         fab();
+        //toolbar
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-
-
-
-
 
     }
 
@@ -95,7 +85,8 @@ public class Task extends AppCompatActivity  {
             model.setn(arrayList.get(i).get(0));
             model.sets(arrayList.get(i).get(1));
             model.sett(arrayList.get(i).get(2));
-            model.setd(arrayList.get(i).get(3));
+            model.setdu(arrayList.get(i).get(3));
+            model.setd(arrayList.get(i).get(4));
             list.add(model);
         }
         return list;
@@ -148,7 +139,6 @@ public class Task extends AppCompatActivity  {
     }
 
     // create an action bar button
-
     @Override
     public boolean onCreateOptionsMenu (Menu menu){
         getMenuInflater().inflate(R.menu.todo, menu);
@@ -159,17 +149,14 @@ public class Task extends AppCompatActivity  {
         return true;
     }
 
-
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
         int id = item.getItemId();
         if (id == R.id.delete) {
-            idc = id;
             Toast.makeText(Task.this, "Action clicked", Toast.LENGTH_LONG).show();
             return true;
         }
         if (id == R.id.submit) {
-            idc = id;
             Toast.makeText(Task.this, "Act clicked", Toast.LENGTH_LONG).show();
             backtomain();
             //deleteOp.setVisible(false);
@@ -183,9 +170,6 @@ public class Task extends AppCompatActivity  {
         Intent intent = new Intent(this, Task.class);
         startActivity(intent);
     }
-
-
-
 
     private class CustomAdapterr extends BaseAdapter {
         private Context context;
@@ -221,46 +205,37 @@ public class Task extends AppCompatActivity  {
             return 0;
         }
 
-
-
         @Override
         public View getView(int position, View convertView, ViewGroup parent) {
-            final ViewHolderr holder;
+            final ViewHolder holder;
             if (convertView == null) {
-                holder = new ViewHolderr();
+                holder = new ViewHolder();
                 LayoutInflater inflater = (LayoutInflater) context
                         .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
                 convertView = inflater.inflate(R.layout.lv_item, null, true);
                 holder.CheckBox = (CheckBox) convertView.findViewById(R.id.cb);
-                holder.TaskTitileView = (TextView) convertView.findViewById(R.id.task_title);
+                holder.TaskTitleView = (TextView) convertView.findViewById(R.id.task_title);
                 convertView.setTag(holder);
             } else {
-                holder = (ViewHolderr) convertView.getTag();
+                holder = (ViewHolder) convertView.getTag();
             }
-            holder.TaskTitileView.setText(modelArrayList.get(position).getTask()[0]);
+            holder.TaskTitleView.setText(modelArrayList.get(position).getTask()[0]);
             holder.CheckBox.setChecked(modelArrayList.get(position).getSelected());
             Global mApp = ((Global)getApplicationContext());
-
-            //getNowArray = DB.searchById(arrayList.get(position).get("id"));
-            holder.TaskTitileView.setOnClickListener((v)->{
+            holder.TaskTitleView.setOnClickListener((v)->{
                 getNowArray.clear();
-
                 try {
                     mApp.setn(modelArrayList.get(position).getTask()[0]);
                     mApp.sets(modelArrayList.get(position).getTask()[1]);
                     mApp.sett(modelArrayList.get(position).getTask()[2]);
-                    mApp.setd(modelArrayList.get(position).getTask()[3]);
+                    mApp.setdu(modelArrayList.get(position).getTask()[3]);
+                    mApp.setd(modelArrayList.get(position).getTask()[4]);
 
                     Intent intent = new Intent(getApplicationContext(), EditTaskContent.class);
                     startActivity(intent);
-                    //Name = findViewById(R.id.edit_title);
-                    //Name.setText("hi");
-                    //Name.setText(modelArrayList.get(position).getTask());
                 } catch (Exception e) {
-                    Log.d(TAG, "onBindViewHolder: " + e.getMessage());
+                    Log.d(TAG, "error: " + e.getMessage());
                 }
-
-
             });
             holder.CheckBox.setTag(R.integer.one, convertView);
             holder.CheckBox.setTag(position);
@@ -273,12 +248,11 @@ public class Task extends AppCompatActivity  {
             });
             return convertView;
         }
-        private class ViewHolderr {
+        private class ViewHolder {
             protected CheckBox CheckBox;
-            private TextView TaskTitileView;
+            private TextView TaskTitleView;
         }
     }
-
 }
 // create an action bar button
 
