@@ -9,11 +9,13 @@
         android:allowBackup="true"
         android:icon="@drawable/baseline_menu_book_black_48dp"
         android:label="Scheduler"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@drawable/baseline_menu_book_black_48dp"
         android:supportsRtl="true"
         android:theme="@style/Theme.schoolscheduler">
 
-        <activity android:name=".userLogin">
+        <activity
+            android:name=".userLogin"
+            android:label="Login">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
