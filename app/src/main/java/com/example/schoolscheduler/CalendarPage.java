@@ -6,6 +6,7 @@ import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 import android.widget.CalendarView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
@@ -26,6 +27,11 @@ public class CalendarPage extends AppCompatActivity {
         CalendarView myCalendarView = findViewById(R.id.calendarView);
         Button calToTaskBtn = findViewById(R.id.calToTaskBtn);
         Button calToMainBtn = findViewById(R.id.calToMainBtn);
+        TextView Event = findViewById(R.id.eventListId);
+
+
+        //Code to get the Upcoming tasks for the week
+
 
 
         //Code when I hit the calendar
@@ -59,9 +65,6 @@ public class CalendarPage extends AppCompatActivity {
                 if(getCallingActivity() != null){
                     Log.d(TAG,getCallingActivity().getClassName());
                 }
-
-
-
             }
         });
 
