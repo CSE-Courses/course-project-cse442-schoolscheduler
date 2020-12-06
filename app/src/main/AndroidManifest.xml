@@ -3,6 +3,7 @@
     package="com.example.schoolscheduler">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.VIBRATE" />
 
     <application
         android:allowBackup="true"
@@ -11,15 +12,19 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.schoolscheduler">
-        <activity android:name=".notification_setting"/>
-        <activity android:name=".userSignUp" /> <!-- Login/Signup -->
-        <activity android:name=".userLogin"><!-- MainPage -->
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".ringtones">
+        <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
         </activity>
+
+        <activity android:name=".notification_sounds" />
+        <activity android:name=".notification_setting" />
+        <activity android:name=".userSignUp" /> <!-- Login/Signup -->
+        <activity android:name=".userLogin"/> <!-- MainPage -->
+
         <activity android:name=".CalendarPage" />
         <activity android:name=".CreateTask" />
         <activity android:name=".TaskList" />

@@ -57,5 +57,13 @@
     <string name="notification">Notification</string>
     <string name="default_sound">Default Sound</string>
 
+    <!--rigntone-->
+    <string-array name="songs">
+        <item> </item>
+        <item>Ringtone 1</item>
+        <item>Ringtone 2</item>
+        <item>Ringtone 3</item>
+    </string-array>
+
 
 </resources>
