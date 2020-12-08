@@ -34,7 +34,8 @@
         android:layout_alignParentStart="true"
         android:layout_marginTop="10dp"
         android:text="@string/subject_string"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#1D1A22"/>
 
     <EditText
         android:id="@+id/edit_subject_s"
@@ -58,7 +59,8 @@
         android:layout_alignEnd="@id/edit_subject"
         android:layout_marginTop="12dp"
         android:text="@string/type_string"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#1D1A22"/>
 
     <EditText
         android:id="@+id/edit_type_s"
@@ -82,7 +84,8 @@
         android:layout_alignEnd="@id/edit_subject"
         android:layout_marginTop="12dp"
         android:text="@string/due_string"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textColor="#1D1A22"/>
 
     <TextView
         android:id="@+id/edit_date"
@@ -105,34 +108,16 @@
         android:layout_toEndOf="@id/edit_date"
         android:text="@string/change_date_string" />
 
-    <!-- Priority -->
 
-    <TextView
-        android:id="@+id/edit_priority"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit_date"
-        android:layout_alignEnd="@id/edit_subject"
-        android:layout_marginTop="12dp"
-        android:text="@string/priority_string"
-        android:textAppearance="?android:attr/textAppearanceMedium" />
+
 
     <!-- Details -->
-    <CheckBox
-        android:id="@+id/edit_priority_checkBox"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_below="@id/edit_date"
-        android:layout_marginStart="7dp"
-        android:layout_marginTop="2dp"
-        android:layout_toEndOf="@id/edit_priority"
-        android:orientation="vertical" />
 
     <EditText
         android:id="@+id/edit_details"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_below="@id/edit_priority"
+        android:layout_below="@id/edit_date"
         android:layout_alignParentStart="true"
         android:layout_marginTop="12dp"
         android:ems="10"

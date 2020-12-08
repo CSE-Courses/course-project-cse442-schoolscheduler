@@ -42,9 +42,11 @@
             </intent-filter>
         </activity>
 
+        <receiver android:name=".TaskPage.AddNewTask$AlarmReceiver" />
 
 
     </application>
+
 
 
 </manifest>

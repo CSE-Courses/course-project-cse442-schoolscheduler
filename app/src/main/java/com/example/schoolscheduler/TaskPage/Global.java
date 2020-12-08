@@ -3,6 +3,7 @@ package com.example.schoolscheduler.TaskPage;
 import android.app.Application;
 
 public class Global extends Application {
+    //Global variable to save data of current clicked item(the task we want to edit)
     private String id;
     private String name;
     private String sub;
