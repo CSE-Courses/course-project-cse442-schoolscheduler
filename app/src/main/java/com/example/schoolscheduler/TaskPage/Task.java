@@ -64,7 +64,7 @@ public class Task extends AppCompatActivity  {
             //modelArrayList = getModel(false);
 
             //Change the height of ListView
-            params.height = Todaylist_size * 140;
+            params.height = Todaylist_size * 195;
 
             lv.setLayoutParams(params);
             lv.requestLayout();
@@ -178,30 +178,16 @@ public class Task extends AppCompatActivity  {
                 customAdapter.notifyDataSetChanged();
             Toast.makeText(Task.this, tt, Toast.LENGTH_LONG).show();
 
-            //for (int k=0; k<id_del.size();k++){
-                //DB.delete(id_del.get(k));
-                //Iterator itr = arrayList.iterator();
-                //while (itr.hasNext())
-                //{
-                   // ArrayList<String> x = (ArrayList<String>)itr.next();
-                    //if (x < 10)
-                        //itr.remove();
-                //}
-                //arrayList.remove(position);
-                //arrayList = DB.showOne();
-                //customAdapter.notifyItemRemoved(position);
-            //}
 
-            //id_del.clear();
             Intent intent = new Intent(this, Task.class);
             startActivity(intent);
             return true;
         }
         if (id == R.id.submit) {
-            Toast.makeText(Task.this, "Act clicked", Toast.LENGTH_LONG).show();
+            //Toast.makeText(Task.this, "Act clicked", Toast.LENGTH_LONG).show();
             backtomain();
-            //deleteOp.setVisible(false);
-            //submitOp.setVisible(false);
+            deleteOp.setVisible(false);
+            submitOp.setVisible(false);
             return true;
         }
         return super.onOptionsItemSelected(item);
@@ -260,11 +246,13 @@ public class Task extends AppCompatActivity  {
                 convertView = inflater.inflate(R.layout.lv_item, null, true);
                 holder.CheckBox = (CheckBox) convertView.findViewById(R.id.cb);
                 holder.TaskTitleView = (TextView) convertView.findViewById(R.id.task_title);
+                holder.TaskDateView = (TextView) convertView.findViewById(R.id.lv_date);
                 convertView.setTag(holder);
             } else {
                 holder = (ViewHolder) convertView.getTag();
             }
             holder.TaskTitleView.setText(modelArrayList.get(position).getTask()[1]);
+            holder.TaskDateView.setText(modelArrayList.get(position).getTask()[4]);
             holder.CheckBox.setChecked(modelArrayList.get(position).getSelected());
             Global mApp = ((Global)getApplicationContext());
             holder.TaskTitleView.setOnClickListener((v)->{
@@ -299,10 +287,27 @@ public class Task extends AppCompatActivity  {
         private class ViewHolder {
             protected CheckBox CheckBox;
             private TextView TaskTitleView;
+            private TextView TaskDateView;
         }
     }
 }
 // create an action bar button
+
+//for (int k=0; k<id_del.size();k++){
+//DB.delete(id_del.get(k));
+//Iterator itr = arrayList.iterator();
+//while (itr.hasNext())
+//{
+// ArrayList<String> x = (ArrayList<String>)itr.next();
+//if (x < 10)
+//itr.remove();
+//}
+//arrayList.remove(position);
+//arrayList = DB.showOne();
+//customAdapter.notifyItemRemoved(position);
+//}
+
+//id_del.clear();
 
 
 
