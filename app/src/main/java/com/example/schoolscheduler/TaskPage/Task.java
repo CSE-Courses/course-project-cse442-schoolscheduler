@@ -306,7 +306,6 @@ public class Task extends AppCompatActivity  {
 //arrayList = DB.showOne();
 //customAdapter.notifyItemRemoved(position);
 //}
-
 //id_del.clear();
 
 
