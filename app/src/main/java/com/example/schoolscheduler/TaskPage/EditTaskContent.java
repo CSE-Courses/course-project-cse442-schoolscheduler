@@ -41,6 +41,7 @@ public class EditTaskContent extends AppCompatActivity {
         id = "";
         back();
         change();
+        Cancel();
 
         //datepicker
         date = (TextView) findViewById(R.id.edit_date);
@@ -88,27 +89,91 @@ public class EditTaskContent extends AppCompatActivity {
 
     public void back(){
         Button save = findViewById(R.id.edit_savebutton);
-        save.setOnClickListener(view ->
-                 {
-                        Toast.makeText(EditTaskContent.this, "Changes Saved", Toast.LENGTH_SHORT).show();
-                        EditText name = findViewById(R.id.edit_title);
-                        EditText sub = findViewById(R.id.edit_subject_s);
-                        EditText type = findViewById(R.id.edit_type_s);
-                        TextView due = findViewById(R.id.edit_date);
-                        EditText detail = findViewById(R.id.edit_details);
-                        DB.modify(id
-                                ,name.getText().toString()
-                                ,sub.getText().toString()
-                                ,type.getText().toString()
-                                ,due.getText().toString()
-                                ,detail.getText().toString());
-                        open();
+        save.setOnClickListener(view -> {
+            EditText Title = findViewById(R.id.edit_title);
+            TextView Due = findViewById(R.id.edit_date);
+            String t = Title.getText().toString();
+            String du = Due.getText().toString();
+            Calendar c = Calendar.getInstance();
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+            int day = c.get(Calendar.DAY_OF_MONTH);
+            if (t == null || t.equals("")){ //no task title
+                Toast.makeText(this,"Task Title cannot be blank", Toast.LENGTH_SHORT).show();
+            }
+            else if(du == null || du.equals("") || du.equals("00/00/00")){ //no due date
+                Toast.makeText(this,"Due date cannot be blank", Toast.LENGTH_SHORT).show();
+            }
+            else if (getyear(du)< year || getmonth(du) < month || getdate(du) < day){
+                Toast.makeText(this,"Due date already passed!", Toast.LENGTH_SHORT).show();
+            }
+            else {
+                Toast.makeText(EditTaskContent.this, "Changes Saved", Toast.LENGTH_SHORT).show();
+                EditText name = findViewById(R.id.edit_title);
+                EditText sub = findViewById(R.id.edit_subject_s);
+                EditText type = findViewById(R.id.edit_type_s);
+                TextView due = findViewById(R.id.edit_date);
+                EditText detail = findViewById(R.id.edit_details);
+                DB.modify(id
+                        , name.getText().toString()
+                        , sub.getText().toString()
+                        , type.getText().toString()
+                        , due.getText().toString()
+                        , detail.getText().toString());
+                open();
+            }
 
                 });
+
 
     }
     public void open() {
         Intent intent = new Intent(this, Task.class);
         startActivity(intent);
     }
-}
+
+    public void Cancel(){
+        Button cancel = findViewById(R.id.edit_canceladdbutton);
+        cancel.setOnClickListener(view -> {
+            Intent backtomain = new Intent(this, Task.class);
+            startActivity(backtomain);
+        });
+    }
+
+        public int getdate(String str){
+            int num = 0;
+            if (str.charAt(1) == '/') {
+                    if (str.charAt(3) == '/') {
+                        num = Integer.parseInt(String.valueOf(str.charAt(2)));
+                    } else {
+                        num = Integer.parseInt(String.valueOf(str.charAt(2))) * 10 + Integer.parseInt(String.valueOf(str.charAt(3)));
+                    }
+                }
+                if (str.charAt(2) == '/'){
+                    if (str.charAt(4) == '/'){
+                        num = Integer.parseInt(String.valueOf(str.charAt(3)));
+                    }
+                    else{
+                        num = Integer.parseInt(String.valueOf(str.charAt(3)))*10+ Integer.parseInt(String.valueOf(str.charAt(4)));
+                    }
+                }
+                return num;
+            }
+
+            public int getyear(String str){
+                int num = 0;
+                num = Integer.parseInt(str.substring(str.length() - 4));
+                return num;
+            }
+
+            public int getmonth(String str){
+                int num = 0;
+                if (str.charAt(1) == '/') {
+                    num = Integer.parseInt(String.valueOf(str.charAt(0)));
+                }
+                else{
+                    num = Integer.parseInt(String.valueOf(str.charAt(0)))*10+ Integer.parseInt(String.valueOf(str.charAt(1)));
+                }
+                return num;
+            }
+    }

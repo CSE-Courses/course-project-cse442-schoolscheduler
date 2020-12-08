@@ -38,13 +38,10 @@
   <component name="ChangeListManager">
     <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Global.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Global.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/EditTaskContent.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/EditTaskContent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Task.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/Task.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/edit_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/edit_task.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/lv_item.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/lv_item.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/new_task.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/new_task.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -340,7 +337,14 @@
       <option name="project" value="LOCAL" />
       <updated>1607398084568</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Add the cancel button to be able to back from AddTask. Add &quot;notification&quot; feature inside task setting.">
+      <created>1607398346397</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1607398346397</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -384,7 +388,8 @@
     <MESSAGE value="Update the menu item &quot;delete&quot; and fix the bug on Edit page." />
     <MESSAGE value="Fix the toolbar to make the submit button functioning. Show the deadline of each task on the task page list." />
     <MESSAGE value="Fix the toolbar to make the submit button functioning. Show the deadline of each task on the task page list. #91 #102" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fix the toolbar to make the submit button functioning. Show the deadline of each task on the task page list. #91 #102" />
+    <MESSAGE value="Add the cancel button to be able to back from AddTask. Add &quot;notification&quot; feature inside task setting." />
+    <option name="LAST_COMMIT_MESSAGE" value="Add the cancel button to be able to back from AddTask. Add &quot;notification&quot; feature inside task setting." />
   </component>
   <component name="WindowStateProjectService">
     <state x="487" y="0" key="#app" timestamp="1605133685594">
@@ -548,7 +553,7 @@
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.830@0.23.1440.830" timestamp="1606568349144" />
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
-    <state x="299" y="173" key="Vcs.Push.Dialog.v2" timestamp="1607398086217">
+    <state x="299" y="173" key="Vcs.Push.Dialog.v2" timestamp="1607398385413">
       <screen x="0" y="23" width="1440" height="837" />
     </state>
     <state x="312" y="174" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1605053126614" />
@@ -557,7 +562,7 @@
     <state x="299" y="172" key="Vcs.Push.Dialog.v2/0.23.1440.830@0.23.1440.830" timestamp="1606809173343" />
     <state x="299" y="173" key="Vcs.Push.Dialog.v2/0.23.1440.832@0.23.1440.832" timestamp="1605675956862" />
     <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1604889586163" />
-    <state x="299" y="173" key="Vcs.Push.Dialog.v2/0.23.1440.837@0.23.1440.837" timestamp="1607398086217" />
+    <state x="299" y="173" key="Vcs.Push.Dialog.v2/0.23.1440.837@0.23.1440.837" timestamp="1607398385413" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605029058637" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.833@0.23.1440.833" timestamp="1604890257890" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.23.1440.834@0.23.1440.834" timestamp="1605029058637" />

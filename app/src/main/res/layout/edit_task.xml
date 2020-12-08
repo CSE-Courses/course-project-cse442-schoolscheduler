@@ -128,11 +128,24 @@
         android:minLines="1" />
 
     <Button
-        android:id="@+id/edit_savebutton"
-        android:layout_width="225dp"
-        android:layout_height="wrap_content"
+        android:id="@+id/edit_canceladdbutton"
+        android:layout_width="150dp"
+        android:layout_height="64dp"
         android:layout_alignParentStart="true"
-        android:layout_marginStart="70dp"
-        android:layout_marginTop="300dp"
+        android:layout_marginStart="34dp"
+        android:layout_marginTop="400dp"
+        android:text="Cancel" />
+
+    <Button
+        android:id="@+id/edit_savebutton"
+        android:layout_width="171dp"
+        android:layout_height="64dp"
+        android:layout_alignParentStart="true"
+
+        android:layout_alignParentEnd="true"
+
+        android:layout_marginStart="191dp"
+        android:layout_marginTop="400dp"
+        android:layout_marginEnd="34dp"
         android:text="Save" />
 </RelativeLayout>

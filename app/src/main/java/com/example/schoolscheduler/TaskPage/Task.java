@@ -25,6 +25,7 @@ import com.example.schoolscheduler.SQLDatabase;
 import com.facebook.stetho.Stetho;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.HashMap;
 import java.util.Iterator;
 
@@ -35,11 +36,14 @@ public class Task extends AppCompatActivity  {
     private final int DB_VERSION = 1;
     SQLDatabase DB;
     ArrayList<ArrayList<String>> arrayList = new ArrayList<>();
+    ArrayList<ArrayList<String>> todayList = new ArrayList<>();
+    ArrayList<ArrayList<String>> tomList = new ArrayList<>();
+    ArrayList<ArrayList<String>> next7List = new ArrayList<>();
     ArrayList<String> getNowArray = new ArrayList<>();
     private int Todaylist_size;
-    private ListView lv;
+    private ListView lv1, lv2,lv3;
     private ArrayList<Model> modelArrayList;
-    private CustomAdapterr customAdapter;
+    private CustomAdapterr customAdapter1, customAdapter2,customAdapter3;
     private MenuItem submitOp;
     private MenuItem deleteOp;
     private ArrayList<String> id_del;
@@ -56,21 +60,68 @@ public class Task extends AppCompatActivity  {
         DB = new SQLDatabase(this, DB_NAME, null, DB_VERSION, TABLE_NAME);
         DB.checkTable();
         arrayList = DB.showOne();
-        Todaylist_size = arrayList.size();
-        if (Todaylist_size > 0) {
-            //list out all tasks
-            lv = (ListView) findViewById(R.id.lv);
-            ViewGroup.LayoutParams params = lv.getLayoutParams();
-            //modelArrayList = getModel(false);
+        if (arrayList.size() > 0) {
+            //check date for all tasks
+            Calendar c = Calendar.getInstance();
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+            int day = c.get(Calendar.DAY_OF_MONTH);
+            String dat = (month+1) + "/" + day +"/"+ year;
+            for (int i = 0; i < arrayList.size(); i++){
+                String duedate = arrayList.get(i).get(4);
+                if (duedate.equals(dat)){
+                    todayList.add(arrayList.get(i));
+                }
+                if (getdate(duedate)-day == 1 ){
+                    tomList.add(arrayList.get(i));
+                }
+                if (getdate(duedate)-day < 8 && getdate(duedate)-day > 1){
+                    next7List.add(arrayList.get(i));
+                }
+            }
+            if (todayList.size() > 0) {
+                //list out all tasks
+                lv1 = (ListView) findViewById(R.id.lv);
+                ViewGroup.LayoutParams params = lv1.getLayoutParams();
+                //modelArrayList = getModel(false);
 
-            //Change the height of ListView
-            params.height = Todaylist_size * 195;
+                //Change the height of ListView
+                params.height = todayList.size() * 195;
 
-            lv.setLayoutParams(params);
-            lv.requestLayout();
-            customAdapter = new CustomAdapterr(this, arrayList);
+                lv1.setLayoutParams(params);
+                lv1.requestLayout();
+                customAdapter1 = new CustomAdapterr(this, todayList);
 
-            lv.setAdapter(customAdapter);
+                lv1.setAdapter(customAdapter1);
+            }
+            if (tomList.size() > 0) {
+                //list out all tasks
+                lv2 = (ListView) findViewById(R.id.list_tom);
+                ViewGroup.LayoutParams params = lv2.getLayoutParams();
+                //modelArrayList = getModel(false);
+
+                //Change the height of ListView
+                params.height = tomList.size() * 195;
+
+                lv2.setLayoutParams(params);
+                lv2.requestLayout();
+                customAdapter2 = new CustomAdapterr(this, tomList);
+                lv2.setAdapter(customAdapter2);
+            }
+            if (next7List.size() > 0) {
+                //list out all tasks
+                lv3 = (ListView) findViewById(R.id.list_next_7);
+                ViewGroup.LayoutParams params = lv3.getLayoutParams();
+                //modelArrayList = getModel(false);
+                //Change the height of ListView
+                params.height = next7List.size() * 195;
+
+                lv3.setLayoutParams(params);
+                lv3.requestLayout();
+                customAdapter3 = new CustomAdapterr(this, next7List);
+                lv3.setAdapter(customAdapter3);
+            }
+
         }
         //add button
         fab();
@@ -89,12 +140,12 @@ public class Task extends AppCompatActivity  {
         for (int i = 0; i < arr.size(); i++) {
             Model model = new Model();
             model.setSelected(isSelect);
-            model.mseti(arrayList.get(i).get(0));
-            model.msetn(arrayList.get(i).get(1));
-            model.msets(arrayList.get(i).get(2));
-            model.msett(arrayList.get(i).get(3));
-            model.msetdu(arrayList.get(i).get(4));
-            model.msetd(arrayList.get(i).get(5));
+            model.mseti(arr.get(i).get(0));
+            model.msetn(arr.get(i).get(1));
+            model.msets(arr.get(i).get(2));
+            model.msett(arr.get(i).get(3));
+            model.msetdu(arr.get(i).get(4));
+            model.msetd(arr.get(i).get(5));
             list.add(model);
         }
         return list;
@@ -175,8 +226,8 @@ public class Task extends AppCompatActivity  {
             for (int k=0; k<arrayList.size();k++){
                 tt = tt + arrayList.get(k).get(1);
             }
-                customAdapter.notifyDataSetChanged();
-            Toast.makeText(Task.this, tt, Toast.LENGTH_LONG).show();
+                //customAdapter.notifyDataSetChanged();
+            //Toast.makeText(Task.this, tt, Toast.LENGTH_LONG).show();
 
 
             Intent intent = new Intent(this, Task.class);
@@ -289,6 +340,25 @@ public class Task extends AppCompatActivity  {
             private TextView TaskTitleView;
             private TextView TaskDateView;
         }
+    }
+    public int getdate(String str){
+        int num = 0;
+        if (str.charAt(1) == '/') {
+            if (str.charAt(3) == '/') {
+                num = Integer.parseInt(String.valueOf(str.charAt(2)));
+            } else {
+                num = Integer.parseInt(String.valueOf(str.charAt(2))) * 10 + Integer.parseInt(String.valueOf(str.charAt(3)));
+            }
+        }
+        if (str.charAt(2) == '/'){
+            if (str.charAt(4) == '/'){
+                num = Integer.parseInt(String.valueOf(str.charAt(3)));
+            }
+            else{
+                num = Integer.parseInt(String.valueOf(str.charAt(3)))*10+ Integer.parseInt(String.valueOf(str.charAt(4)));
+            }
+        }
+        return num;
     }
 }
 // create an action bar button

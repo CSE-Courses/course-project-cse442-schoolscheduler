@@ -45,6 +45,7 @@ public class AddNewTask extends AppCompatActivity {
     private DatePickerDialog.OnDateSetListener dateListener, alarmdateListener;
     static String alarm_id, static_due ;
     SQLDatabase DB;
+    //String try = "12/8/2020";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -160,15 +161,23 @@ public class AddNewTask extends AppCompatActivity {
         Due = findViewById(R.id.new_date);
         Details = findViewById(R.id.new_details);
         AlarmDate = findViewById(R.id.alarm_date_view);
+
         save.setOnClickListener(view -> {
             String t = Title.getText().toString();
             String du = Due.getText().toString();
             String ad = AlarmDate.getText().toString();
+            Calendar c = Calendar.getInstance();
+            int year = c.get(Calendar.YEAR);
+            int month = c.get(Calendar.MONTH);
+            int day = c.get(Calendar.DAY_OF_MONTH);
             if (t == null || t.equals("")){ //no task title
                 Toast.makeText(AddNewTask.this,"Task Title cannot be blank", Toast.LENGTH_SHORT).show();
             }
             else if(du == null || du.equals("") || du.equals("00/00/00")){ //no due date
                 Toast.makeText(AddNewTask.this,"Due date cannot be blank", Toast.LENGTH_SHORT).show();
+            }
+            else if (getyear(du)< year || getmonth(du) < month || getdate(du) < day){
+                Toast.makeText(AddNewTask.this,"Due date already passed!", Toast.LENGTH_SHORT).show();
             }
             else {
                 DB.addData(Title.getText().toString(),
@@ -198,6 +207,8 @@ public class AddNewTask extends AppCompatActivity {
                     AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
                     alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
                 }
+                //String tryy = "12/10/2020";
+                //String nn = String.valueOf(getmonth(tryy));
                 Toast.makeText(AddNewTask.this, "Task Added!", Toast.LENGTH_SHORT).show();
                 Intent backtomain = new Intent(this, Task.class);
                 startActivity(backtomain);
@@ -240,5 +251,43 @@ public class AddNewTask extends AppCompatActivity {
         }
 
     }
+
+    public int getdate(String str){
+        int num = 0;
+        if (str.charAt(1) == '/') {
+            if (str.charAt(3) == '/') {
+                num = Integer.parseInt(String.valueOf(str.charAt(2)));
+            } else {
+                num = Integer.parseInt(String.valueOf(str.charAt(2))) * 10 + Integer.parseInt(String.valueOf(str.charAt(3)));
+            }
+        }
+        if (str.charAt(2) == '/'){
+            if (str.charAt(4) == '/'){
+                num = Integer.parseInt(String.valueOf(str.charAt(3)));
+            }
+            else{
+                num = Integer.parseInt(String.valueOf(str.charAt(3)))*10+ Integer.parseInt(String.valueOf(str.charAt(4)));
+            }
+        }
+        return num;
+    }
+
+    public int getyear(String str){
+        int num = 0;
+        num = Integer.parseInt(str.substring(str.length() - 4));
+        return num;
+    }
+
+    public int getmonth(String str){
+        int num = 0;
+        if (str.charAt(1) == '/') {
+            num = Integer.parseInt(String.valueOf(str.charAt(0)));
+        }
+        else{
+            num = Integer.parseInt(String.valueOf(str.charAt(0)))*10+ Integer.parseInt(String.valueOf(str.charAt(1)));
+        }
+        return num;
+    }
+
 
 }
