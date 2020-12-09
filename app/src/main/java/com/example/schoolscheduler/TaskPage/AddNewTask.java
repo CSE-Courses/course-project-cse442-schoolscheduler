@@ -1,16 +1,26 @@
 package com.example.schoolscheduler.TaskPage;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
 import androidx.core.app.NotificationCompat;
 import androidx.core.app.NotificationManagerCompat;
 
+
 import androidx.fragment.app.DialogFragment;
 
+import com.example.schoolscheduler.CalendarPage;
 import com.example.schoolscheduler.CreateTask;
 import com.example.schoolscheduler.R;
 import com.example.schoolscheduler.SQLDatabase;
 import com.example.schoolscheduler.TimeDialog;
+import com.example.schoolscheduler.general;
+import com.example.schoolscheduler.settings;
 import com.facebook.stetho.Stetho;
+import com.google.android.material.navigation.NavigationView;
 
 import android.annotation.SuppressLint;
 import android.app.AlarmManager;
@@ -27,8 +37,11 @@ import android.content.Intent;
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
+import android.provider.Settings;
+import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
+
 import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
@@ -37,6 +50,7 @@ import android.widget.TimePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
 import android.widget.Toast;
+
 
 import java.util.Calendar;
 
@@ -69,6 +83,7 @@ public class AddNewTask extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
         setContentView(R.layout.new_task);
 /* switch to notification setting but it is not working
 
@@ -102,6 +117,7 @@ public class AddNewTask extends AppCompatActivity {
             }
         });
          */
+
 
 ///////open the database and add data/////////
         Stetho.initializeWithDefaults(this);
@@ -158,6 +174,48 @@ public class AddNewTask extends AppCompatActivity {
                 dialog.show();
             }
         });
+
+        //code for Navigation Drawer
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {     //Opens the drawer
+                //If Home button is pressed
+                if(item.getItemId()== R.id.nav_home){
+                    Toast.makeText(AddNewTask.this,"Home",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(AddNewTask.this, general.class);
+                    startActivity(intent);
+                }
+                //If Calendar is pressed
+                if(item.getItemId()== R.id.nav_calendar){
+                    Toast.makeText(AddNewTask.this,"Calendar",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(AddNewTask.this,CalendarPage.class);
+                    startActivity(intent);
+                }
+                //If Task is pressed
+                if(item.getItemId()==R.id.nav_task){
+                    Toast.makeText(AddNewTask.this,"Tasks",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(AddNewTask.this, Task.class);
+                    startActivity(intent);
+                }
+                //If Setting is pressed
+                if(item.getItemId()==R.id.nav_settings){
+                    Toast.makeText(AddNewTask.this,"Settings",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(AddNewTask.this, settings.class);
+                    startActivity(intent);
+                }
+
+
+                //Closers the drawer when done
+                DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
+
+
+
+
         alarmdateListener = new DatePickerDialog.OnDateSetListener() {
             @Override
             public void onDateSet(DatePicker datePicker, int year, int month, int day) {
@@ -169,6 +227,7 @@ public class AddNewTask extends AppCompatActivity {
                 //Log.d(TAG, "OnDateSet" +i +"/"+i1+"/"+i2);
             }
         };
+
 
 ///////alarm-timepicker/////////
         alarmtime = (TextView) findViewById(R.id.alarm_time_view);

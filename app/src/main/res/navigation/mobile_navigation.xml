@@ -3,24 +3,25 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/mobile_navigation"
-    app:startDestination="@+id/nav_tasks">
+
+    app:startDestination="@+id/nav_home">
 
     <fragment
-        android:id="@+id/nav_tasks"
-        android:name="com.example.schoolscheduler.TaskPage.Task"
-        android:label="Menu_Tasks"
-        tools:layout="@layout/main_task_page" />
+        android:id="@+id/nav_home"
+        android:name="com.example.schoolscheduler.ui.home.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
 
     <fragment
-        android:id="@+id/nav_login"
-        android:name="com.example.schoolscheduler.userLogin"
-        android:label="Menu_Login"
-        tools:layout="@layout/activity_user_login" />
+        android:id="@+id/nav_gallery"
+        android:name="com.example.schoolscheduler.ui.gallery.GalleryFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_gallery" />
 
     <fragment
-        android:id="@+id/nav_signup"
-        android:name="com.example.schoolscheduler.userSignUp"
-        android:label="Menu_Home"
-        tools:layout="@layout/activity_user_sign_up" />
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.schoolscheduler.ui.slideshow.SlideshowFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_slideshow" />
 
 </navigation>

@@ -1,16 +1,29 @@
 package com.example.schoolscheduler.TaskPage;
 
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
+
+import androidx.core.view.GravityCompat;
+import androidx.drawerlayout.widget.DrawerLayout;
+
+import com.example.schoolscheduler.CalendarPage;
+import com.example.schoolscheduler.CreateTask;
+
 import androidx.appcompat.widget.Toolbar;
+
 
 import com.example.schoolscheduler.R;
 
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+
+import android.provider.Settings;
+
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.Menu;
+
 import android.view.MenuItem;
 import android.view.View;
 import android.view.ViewGroup;
@@ -22,8 +35,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.schoolscheduler.SQLDatabase;
+import com.example.schoolscheduler.general;
+import com.example.schoolscheduler.settings;
 import com.facebook.stetho.Stetho;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.navigation.NavigationView;
+
 import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.HashMap;
@@ -54,7 +71,47 @@ public class Task extends AppCompatActivity  {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.main_task_page);
+        setContentView(R.layout.nav_main_task_page);
+
+        //code for Navigation Drawer
+        NavigationView navigationView = findViewById(R.id.nav_view);
+        navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {     //Opens the drawer
+                //If Home button is pressed
+                if(item.getItemId()== R.id.nav_home){
+                    Toast.makeText(Task.this,"Home",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Task.this, general.class);
+                    startActivity(intent);
+                }
+                //If Calendar is pressed
+                if(item.getItemId()== R.id.nav_calendar){
+                    Toast.makeText(Task.this,"Calendar",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Task.this, CalendarPage.class);
+                    startActivity(intent);
+                }
+                //If Task is pressed
+                if(item.getItemId()==R.id.nav_task){
+                    Toast.makeText(Task.this,"Tasks",Toast.LENGTH_SHORT).show();
+                }
+                //If Setting is pressed
+                if(item.getItemId()==R.id.nav_settings){
+                    Toast.makeText(Task.this,"Settings",Toast.LENGTH_SHORT).show();
+                    Intent intent = new Intent(Task.this, settings.class);
+                    startActivity(intent);
+                }
+
+
+                //Closers the drawer when done
+                DrawerLayout drawerLayout = findViewById(R.id.drawer_layout);
+                drawerLayout.closeDrawer(GravityCompat.START);
+                return true;
+            }
+        });
+
+
+
+
         //work db
         Stetho.initializeWithDefaults(this);
         DB = new SQLDatabase(this, DB_NAME, null, DB_VERSION, TABLE_NAME);
