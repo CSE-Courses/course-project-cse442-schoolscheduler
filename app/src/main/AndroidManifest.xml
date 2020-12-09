@@ -18,7 +18,7 @@
         <activity
             android:name=".DrawerActivity"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/Theme.schoolscheduler.NoActionBar"></activity>
+            android:theme="@style/Theme.schoolscheduler.NoActionBar"/>
 
         <activity android:name=".ringtones"/>
 
@@ -26,60 +26,41 @@
         <activity android:name=".notification_setting" />
         <activity android:name=".userSignUp" /> <!-- Login/Signup -->
         <activity android:name=".userLogin"> <!-- MainPage -->
-        <intent-filter>
-            <action android:name="android.intent.action.MAIN" />
 
 
-            <category android:name="android.intent.category.LAUNCHER" />
-        </intent-filter>
         </activity>
 
         <activity android:name=".CalendarPage" />
         <activity android:name=".CreateTask" />
         <activity android:name=".TaskList" />
-        <activity android:name=".Main_Page" /> <!-- Settings Part -->
-        <activity android:name=".profile" />
-        <activity android:name=".general" />
-        <activity android:name=".settings" /> <!-- Task Part -->
+        <activity android:name=".Main_Page" />
+        <!-- Settings Part -->
+         <!-- Task Part -->
         <activity
             android:name=".TaskPage.AddNewTask"
             android:label="Add"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".TaskPage.EditTaskContent"
             android:label="Edit"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"/>
         <activity
             android:name=".TaskPage.Task"
             android:label="Tasks"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait"/>
 
-        <activity android:name=".CalendarPage"></activity>
-        <activity android:name=".CreateTask"></activity>
-        <activity android:name=".TaskList"></activity>
-        <activity android:name=".Main_Page"></activity>
-        <activity android:name=".SchedulePage"></activity>
-        <activity android:name=".NewCourse"></activity>
+
+        <activity android:name=".SchedulePage"/>
+        <activity android:name=".NewCourse"/>
 
 
         <!--Settings Part-->
-        <activity android:name=".profile"></activity>
-        <activity android:name=".general"></activity>
-        <activity android:name=".settings"></activity>
+        <activity android:name=".profile"/>
+        <activity android:name=".general"/>
+        <activity android:name=".settings"/>
 
         <!--Task Part-->
-        <activity
-            android:name=".TaskPage.AddNewTask"
-            android:label="Add"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".TaskPage.EditTaskContent"
-            android:label="Edit"
-            android:screenOrientation="portrait" />
-        <activity
-            android:name=".TaskPage.Task"
-            android:label="Tasks"
-            android:screenOrientation="portrait" />
+
 
         <receiver android:name=".TaskPage.AddNewTask$AlarmReceiver" />
       
