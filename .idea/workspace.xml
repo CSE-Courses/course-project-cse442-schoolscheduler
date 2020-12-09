@@ -46,11 +46,9 @@
     </select>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="test4">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/hashMD5.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/userSignUp.java" afterDir="false" />
+    <list default="true" id="59fd2e87-5cd2-4160-b012-63d4db26219c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/example/schoolscheduler/TaskPage/AddNewTask.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -290,7 +288,14 @@
       <option name="project" value="LOCAL" />
       <updated>1605058522111</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Restored deleted files">
+      <created>1607538363118</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1607538363118</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -311,7 +316,8 @@
     <MESSAGE value="Clean master again" />
     <MESSAGE value="settings page created (class,.xml)" />
     <MESSAGE value="create a 'new_task' branch from 'dev'" />
-    <option name="LAST_COMMIT_MESSAGE" value="create a 'new_task' branch from 'dev'" />
+    <MESSAGE value="Restored deleted files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Restored deleted files" />
   </component>
   <component name="WindowStateProjectService">
     <state x="733" y="153" key="#com.intellij.ide.util.MemberChooser" timestamp="1605060169765">
@@ -331,10 +337,10 @@
       <screen x="0" y="0" width="1504" height="963" />
     </state>
     <state x="566" y="261" key="AndroidCreateXmlResourceDialog/0.0.1504.963@0.0.1504.963" timestamp="1605051615816" />
-    <state x="326" y="0" key="CommitChangelistDialog2" timestamp="1605028574764">
-      <screen x="0" y="0" width="1536" height="824" />
+    <state x="319" y="0" key="CommitChangelistDialog2" timestamp="1607538361773">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="319" y="0" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1605053077851" />
+    <state x="319" y="0" key="CommitChangelistDialog2/0.0.1504.963@0.0.1504.963" timestamp="1607538361773" />
     <state x="326" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1605028574764" />
     <state width="1211" height="216" key="GridCell.Tab.0.bottom" timestamp="1605080196993">
       <screen x="0" y="23" width="1440" height="836" />
@@ -384,10 +390,10 @@
       <screen x="0" y="23" width="1440" height="835" />
     </state>
     <state x="300" y="85" key="SettingsEditor/0.23.1440.835@0.23.1440.835" timestamp="1604885278569" />
-    <state x="299" y="174" key="Vcs.Push.Dialog.v2" timestamp="1604889915151">
-      <screen x="0" y="23" width="1440" height="834" />
+    <state x="312" y="174" key="Vcs.Push.Dialog.v2" timestamp="1607538370509">
+      <screen x="0" y="0" width="1504" height="963" />
     </state>
-    <state x="312" y="174" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1605053126614" />
+    <state x="312" y="174" key="Vcs.Push.Dialog.v2/0.0.1504.963@0.0.1504.963" timestamp="1607538370509" />
     <state x="299" y="174" key="Vcs.Push.Dialog.v2/0.23.1440.834@0.23.1440.834" timestamp="1605058523499" />
     <state x="518" y="355" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1605029058637">
       <screen x="0" y="23" width="1440" height="834" />

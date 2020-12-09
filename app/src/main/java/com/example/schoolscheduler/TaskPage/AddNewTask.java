@@ -11,6 +11,8 @@ import com.example.schoolscheduler.R;
 import com.example.schoolscheduler.SQLDatabase;
 import com.example.schoolscheduler.TimeDialog;
 import com.facebook.stetho.Stetho;
+
+import android.annotation.SuppressLint;
 import android.app.AlarmManager;
 import android.app.DatePickerDialog;
 import android.app.NotificationChannel;
@@ -27,8 +29,10 @@ import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.CompoundButton;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.Switch;
 import android.widget.TimePicker;
 import android.widget.TextView;
 import android.widget.TimePicker;
@@ -52,12 +56,52 @@ public class AddNewTask extends AppCompatActivity {
     private DatePickerDialog.OnDateSetListener dateListener, alarmdateListener;
     static String alarm_id, static_due ;
     SQLDatabase DB;
+    Switch ring_switch;
+    boolean is_ringtone = false;
+    //@SuppressLint("UseSwitchCompatOrMaterialCode")
+    Switch noti_switch;
+    boolean is_notification = false;
+    Switch vi_switch;
+    boolean is_vibrate = false;
+    TextView selected;
     //String try = "12/8/2020";
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_task);
+        noti_switch = (Switch) findViewById(R.id.notification_switch);
+        noti_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    is_notification = true;
+                }
+            }
+        });
+
+        ring_switch = (Switch) findViewById(R.id.ringtone_switch);
+        ring_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    is_ringtone = true;
+                }
+            }
+        });
+
+        vi_switch = (Switch) findViewById(R.id.vibrate_switch);
+        vi_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                if(isChecked){
+                    is_vibrate = true;
+                }
+            }
+        });
+
+
+
 ///////open the database and add data/////////
         Stetho.initializeWithDefaults(this);
         DB = new SQLDatabase(this, DB_NAME, null, DB_VERSION, TABLE_NAME);
@@ -208,11 +252,13 @@ public class AddNewTask extends AppCompatActivity {
                     cal.set(Calendar.MINUTE, m);
                     cal.set(Calendar.SECOND, 0);
                     cal.set(Calendar.MILLISECOND, 0);
-///////alarm manager/////////
-                    Intent intent = new Intent(this, AlarmReceiver.class);
-                    PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
-                    AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
-                    alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+///////alarm manager///////////////////
+                    if(is_notification){
+                        Intent intent = new Intent(this, AlarmReceiver.class);
+                        PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
+                        AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
+                        alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
+                    }
                 }
                 //String tryy = "12/10/2020";
                 //String nn = String.valueOf(getmonth(tryy));
@@ -254,7 +300,6 @@ public class AddNewTask extends AppCompatActivity {
 
             NotificationManagerCompat notificationManager = NotificationManagerCompat.from(arg0);
             notificationManager.notify(0x101,builder.build()); //an app only has one notify id
-
         }
 
     }
