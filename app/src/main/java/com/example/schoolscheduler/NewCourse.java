@@ -92,7 +92,7 @@ public class NewCourse extends AppCompatActivity implements TimePickerDialog.OnT
                 // Set course within the day table (e.g. the "Monday" table) for easy retrieval later.
                 for (String day : days) {
                     DatabaseReference newDayRef = daysRef.child(day).push();
-                    newDayRef.setValue(nameField.getText().toString());
+                    newDayRef.setValue(course);
                 }
 
                 // Build intent and send the user back to the schedule page
