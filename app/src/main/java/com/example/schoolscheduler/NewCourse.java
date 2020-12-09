@@ -75,7 +75,8 @@ public class NewCourse extends AppCompatActivity implements TimePickerDialog.OnT
                     days.add(chip.getText().toString());
                 }
 
-                Course course = new Course(startTime.getText().toString(),
+                Course course = new Course(nameField.getText().toString(),
+                        startTime.getText().toString(),
                         endTime.getText().toString(),
                         days);
 

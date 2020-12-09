@@ -11,16 +11,57 @@ import java.util.List;
  */
 
 public class Course {
-    public String startTime;
-    public String endTime;
-    public List<String> days;
+
+
+    private String name;
+    private String startTime;
+    private String endTime;
+    private List<String> days;
 
     // We're only going to instantiate this object once all of the data has been filled in.
-    public Course(String startTime,
+    public Course(String name,
+                  String startTime,
                   String endTime,
                   List<String> days) {
+        this.name = name;
         this.startTime = startTime;
         this.endTime = endTime;
         this.days = days;
+    }
+
+    public Course() {
+        // No value constructor required for Firebase.
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public void setStartTime(String startTime) {
+        this.startTime = startTime;
+    }
+
+    public void setEndTime(String endTime) {
+        this.endTime = endTime;
+    }
+
+    public void setDays(List<String> days) {
+        this.days = days;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public String getStartTime() {
+        return startTime;
+    }
+
+    public String getEndTime() {
+        return endTime;
+    }
+
+    public List<String> getDays() {
+        return days;
     }
 }
