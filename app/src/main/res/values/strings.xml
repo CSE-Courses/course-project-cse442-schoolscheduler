@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App</string>
+    <string name="app_name">School Scheduler</string>
     <string name="password">password</string>
     <string name="email">email</string>
     <string name="log_in">log_in</string>
@@ -39,11 +39,22 @@
         <item>Other</item>
     </string-array>
     <string name="empty_list">Tap on the plus to add new to-do items.</string>
+    <string name="main_page">Main Page</string>
+    <string name="tasks">Tasks</string>
+    <string name="login_signup">Login/Signup</string>
+    <string name="calendar">Calendar</string>
+    <string name="settings">Settings</string>
+    <string name="schoolscheduler">SchoolScheduler</string>
+    <string name="the_only_school_scheduler_you_will_ever_need">The only school scheduler you will ever need</string>
+    <string name="todo">TODO</string>
+    <string name="login">Login</string>
+    <string name="signup">Signup</string>
 
     <!--task-->
     <string name="back">Back</string>
     <string name="calendarText">Calendar</string>
     <string name="doneText">Done</string>
+
     <string name="title_activity_drawer">DrawerActivity</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -59,6 +70,31 @@
     <string name="tasks">Tasks</string>
     <string name="settings">Settings</string>
     <string name="logout">Logout</string>
+
+    <string name="notification">Notification</string>
+    <string name="default_sound">Default Sound</string>
+
+    <!--rigntone-->
+    <string-array name="songs">
+        <item> </item>
+        <item>Ringtone 1</item>
+        <item>Ringtone 2</item>
+        <item>Ringtone 3</item>
+    </string-array>
+    <string name="add_class">Add a class...</string>
+    <string name="course_name">Course Title</string>
+    <string name="abbr_monday">Mon</string>
+    <string name="abbr_tuesday">Tue</string>
+    <string name="abbr_wednesday">Wed</string>
+    <string name="abbr_thursday">Thu</string>
+    <string name="abbr_friday">Fri</string>
+    <string name="abbr_saturday">Sat</string>
+    <string name="abbr_sunday">Sun</string>
+    <string name="startText">Start Time</string>
+    <string name="endText">End Time</string>
+    <string name="addClassButton">Add Class</string>
+    <string name="schedule">Schedule</string>
+
 
 
 </resources>

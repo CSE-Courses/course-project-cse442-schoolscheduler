@@ -22,13 +22,6 @@ public class settings extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.nav_activity_settings);
 
-//        Button general = (Button)findViewById(R.id.generalButton);
-//        general.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                startActivity(new Intent(settings.this,general.class));
-//            }
-//        });
         //code for Navigation Drawer
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -62,6 +55,13 @@ public class settings extends AppCompatActivity {
             }
         });
 
+        Button general = findViewById(R.id.generalButton);
+        general.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(settings.this,general.class));
+            }
+        });
 
     }
 }
