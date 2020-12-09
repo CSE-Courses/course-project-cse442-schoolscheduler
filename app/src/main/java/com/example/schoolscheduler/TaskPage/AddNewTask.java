@@ -70,6 +70,8 @@ public class AddNewTask extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.new_task);
+/* switch to notification setting but it is not working
+
         noti_switch = (Switch) findViewById(R.id.notification_switch);
         noti_switch.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -99,8 +101,7 @@ public class AddNewTask extends AppCompatActivity {
                 }
             }
         });
-
-
+         */
 
 ///////open the database and add data/////////
         Stetho.initializeWithDefaults(this);
@@ -253,12 +254,13 @@ public class AddNewTask extends AppCompatActivity {
                     cal.set(Calendar.SECOND, 0);
                     cal.set(Calendar.MILLISECOND, 0);
 ///////alarm manager///////////////////
-                    if(is_notification){
+                    //notification switch is not working
+                    //if(is_notification){
                         Intent intent = new Intent(this, AlarmReceiver.class);
                         PendingIntent pendingIntent = PendingIntent.getBroadcast(this, 0, intent, 0);
                         AlarmManager alarmManager = (AlarmManager) getSystemService(ALARM_SERVICE);
                         alarmManager.set(AlarmManager.RTC_WAKEUP, cal.getTimeInMillis(), pendingIntent);
-                    }
+                   // }
                 }
                 //String tryy = "12/10/2020";
                 //String nn = String.valueOf(getmonth(tryy));
