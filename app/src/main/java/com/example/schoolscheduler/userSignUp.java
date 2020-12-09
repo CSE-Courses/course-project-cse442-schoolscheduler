@@ -74,8 +74,8 @@ public class userSignUp extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
                                 Toast.makeText(userSignUp.this, "SUCCESSFULLY CREATED ACCOUNT", Toast.LENGTH_SHORT).show();
-//                                Intent transfer = new Intent(userSignUp.this, Setting.class);
-//                                startActivity(transfer);
+                                Intent transfer = new Intent(userSignUp.this, userLogin.class);
+                                startActivity(transfer);
                             }
                             else{
                                 Toast.makeText(userSignUp.this, "THERE WAS A ERROR! " + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
@@ -124,3 +124,4 @@ public class userSignUp extends AppCompatActivity {
         return num && uppercase && lowercase;
     }
 }
+

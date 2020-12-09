@@ -10,6 +10,8 @@ import android.widget.Button;
 
 public class Main_Page extends AppCompatActivity {
 
+    private final static String TAG = "Main_Page";
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

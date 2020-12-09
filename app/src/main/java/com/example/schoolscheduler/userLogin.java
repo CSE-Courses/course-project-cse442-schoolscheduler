@@ -78,7 +78,7 @@ public class userLogin extends AppCompatActivity {
                         public void onComplete(@NonNull Task<AuthResult> task) {
                             if(task.isSuccessful()){
                                 Toast.makeText(userLogin.this, "SUCCESSFULLY LOGGED IN", Toast.LENGTH_SHORT).show();
-                                Intent transfer = new Intent(userLogin.this, Main_Page.class);
+                                Intent transfer = new Intent(userLogin.this, general.class);
                                 startActivity(transfer);
                             }
                             else{
