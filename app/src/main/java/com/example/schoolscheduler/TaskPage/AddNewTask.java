@@ -174,7 +174,7 @@ public class AddNewTask extends AppCompatActivity {
                 dialog.show();
             }
         });
-
+/*
         //code for Navigation Drawer
         NavigationView navigationView = findViewById(R.id.nav_view);
         navigationView.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -214,6 +214,8 @@ public class AddNewTask extends AppCompatActivity {
         });
 
 
+
+ */
 
 
         alarmdateListener = new DatePickerDialog.OnDateSetListener() {
