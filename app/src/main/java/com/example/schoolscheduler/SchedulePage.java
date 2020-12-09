@@ -2,9 +2,10 @@ package com.example.schoolscheduler;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class SchedulePage extends AppCompatActivity {
     @Override
@@ -12,7 +13,7 @@ public class SchedulePage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.schedule_page_layout);
 
-        Button addClassButton = findViewById(R.id.addClassFab);
+        FloatingActionButton addClassButton = findViewById(R.id.addClassFab);
 
         addClassButton.setOnClickListener(view -> {
             Intent intent = new Intent(SchedulePage.this, NewCourse.class);

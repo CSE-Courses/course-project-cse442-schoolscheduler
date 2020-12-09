@@ -73,10 +73,11 @@
     <HorizontalScrollView
         android:id="@+id/horizontalScrollView"
         style="@android:style/Widget.Material.HorizontalScrollView"
-        android:layout_width="378dp"
+        android:layout_width="wrap_content"
         android:layout_height="83dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/setCourseEndTimeButton">
 
@@ -87,7 +88,7 @@
 
             <com.google.android.material.chip.ChipGroup
                 android:id="@+id/DaySelector"
-                android:layout_width="382dp"
+                android:layout_width="wrap_content"
                 android:layout_height="52dp"
                 android:layout_marginTop="20dp"
                 app:chipSpacingHorizontal="8dp"

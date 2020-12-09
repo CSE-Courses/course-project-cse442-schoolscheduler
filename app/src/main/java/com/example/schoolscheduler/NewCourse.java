@@ -25,11 +25,11 @@ import java.util.List;
  */
 
 public class NewCourse extends AppCompatActivity implements TimePickerDialog.OnTimeSetListener {
-    Button setStartTime = findViewById(R.id.setCourseStartTimeButton);
-    Button setEndTime = findViewById(R.id.setCourseEndTimeButton);
-
-    TextView startTime = findViewById(R.id.courseTimeStartView);
-    TextView endTime = findViewById(R.id.courseTimeEndView);
+    Button setStartTime, setEndTime;
+    TextView startTime, endTime;
+    EditText nameField;
+    ChipGroup daySelector;
+    int selectedButton = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -39,70 +39,89 @@ public class NewCourse extends AppCompatActivity implements TimePickerDialog.OnT
 
         // Get Buttons from layout
         Button addClass = findViewById(R.id.addClass);
+        setStartTime = findViewById(R.id.setCourseStartTimeButton);
+        setEndTime = findViewById(R.id.setCourseEndTimeButton);
+
+        startTime = findViewById(R.id.courseTimeStartView);
+        endTime = findViewById(R.id.courseTimeEndView);
 
         // Get Text fields from layout
-        EditText nameField = findViewById(R.id.editCourseTitle);
-
+        nameField = findViewById(R.id.editCourseTitle);
 
         // Initialize list to use when we're done creating the course
         List<String> days = new ArrayList<>();
-        ChipGroup daySelector = findViewById(R.id.DaySelector);
+        daySelector = findViewById(R.id.DaySelector);
 
         // Click listener setups for start and end time dialog buttons
         setStartTime.setOnClickListener(view -> {
+            selectedButton = 0; // Tell time dialog we clicked the start button
             DialogFragment startTimeDialog = new TimeDialog();
             startTimeDialog.show(getSupportFragmentManager(), "Start Time");
         });
         setEndTime.setOnClickListener(view -> {
+            selectedButton = 1; // Tell time dialog we clicked the end button
             DialogFragment endTimeDialog = new TimeDialog();
             endTimeDialog.show(getSupportFragmentManager(), "End Time");
         });
 
         // Click listener for what is basically the 'submit' button on this page
         addClass.setOnClickListener(view -> {
-            List<Integer> ids = daySelector.getCheckedChipIds();
+            if (fieldsValid()) {
+                List<Integer> ids = daySelector.getCheckedChipIds();
 
-            // Get each day that was selected in the day selector
-            for (Integer i : ids) {
-                Chip chip = findViewById(i);
-                days.add(chip.getText().toString());
+                // Get each day that was selected in the day selector
+                for (Integer i : ids) {
+                    Chip chip = findViewById(i);
+                    days.add(chip.getText().toString());
+                }
+
+                Course course = new Course(startTime.getText().toString(),
+                        endTime.getText().toString(),
+                        days);
+
+                FirebaseConnection connection =
+                        new FirebaseConnection("saved-data/schoolscheduler");
+
+                // Add the course to the courses list AND to the lists for the days of the week it's on
+                DatabaseReference daysRef = connection.ref.child("week");
+                DatabaseReference coursesRef = connection.ref.child("courses");
+
+                coursesRef.child(nameField.getText().toString()).setValue(course);
+
+                // Set course within the day table (e.g. the "Monday" table) for easy retrieval later.
+                for (String day : days) {
+                    DatabaseReference newDayRef = daysRef.child(day).push();
+                    newDayRef.setValue(nameField.getText().toString());
+                }
+
+                // Build intent and send the user back to the schedule page
+                Intent intent = new Intent(NewCourse.this, SchedulePage.class);
+                startActivity(intent);
             }
-
-            // Ensure the required fields were filled in
-            if (nameField != null && (nameField.getText().toString().equals("")
-                    || nameField.getText().toString().equals(" "))) {
-                Toast.makeText(NewCourse.this,
-                        "Name can't be empty", Toast.LENGTH_LONG).show();
-            }
-            if (startTime.getText().equals(getString(R.string.no_time_set_string))
-                    || endTime.getText().equals(getString(R.string.no_time_set_string))) {
-                Toast.makeText(NewCourse.this,
-                        "Both start and end time should be set", Toast.LENGTH_LONG).show();
-            }
-
-            Course course = new Course(startTime.getText().toString(),
-                    endTime.getText().toString(),
-                    days);
-
-            FirebaseConnection connection =
-                    new FirebaseConnection("saved-data/schoolscheduler");
-
-            // Add the course to the courses list AND to the lists for the days of the week it's on
-            DatabaseReference daysRef = connection.ref.child("week");
-            DatabaseReference coursesRef = connection.ref.child("courses");
-
-            coursesRef.child(nameField.getText().toString()).setValue(course);
-
-            // Set course within the day table (e.g. the "Monday" table) for easy retrieval later.
-            for (String day : days) {
-                DatabaseReference newDayRef = daysRef.child(day).push();
-                newDayRef.setValue(nameField.getText().toString());
-            }
-
-            // Build intent and send the user back to the schedule page
-            Intent intent = new Intent(NewCourse.this, SchedulePage.class);
-            startActivity(intent);
         });
+    }
+
+    private boolean fieldsValid() {
+        // Ensure the required fields were filled in
+        if (nameField != null && (nameField.getText().toString().equals("")
+                || nameField.getText().toString().equals(" "))) {
+            Toast.makeText(NewCourse.this,
+                    "Name can't be empty", Toast.LENGTH_LONG).show();
+            return false;
+        }
+        if (startTime.getText().equals(getString(R.string.no_time_set_string))
+                || endTime.getText().equals(getString(R.string.no_time_set_string))) {
+            Toast.makeText(NewCourse.this,
+                    "Both start and end time should be set", Toast.LENGTH_LONG).show();
+            return false;
+        }
+        if (daySelector.getChildCount() == 0) {
+            Toast.makeText(NewCourse.this,
+                    "One or more days must be selected.", Toast.LENGTH_LONG).show();
+            return false;
+        }
+
+        return true;
     }
 
     // Taken (and slightly modified) from calendar page's time calculation
@@ -110,7 +129,6 @@ public class NewCourse extends AppCompatActivity implements TimePickerDialog.OnT
     public void onTimeSet(TimePicker timePicker, int hour, int minute) {
         String finalTime;
         String min = minute + "";
-        Button button = (Button) timePicker.getParent().getParent();
 
         if (minute < 10) {
             min = "0" + min;
@@ -128,7 +146,7 @@ public class NewCourse extends AppCompatActivity implements TimePickerDialog.OnT
         }
 
         // Depending on which dialog is opened, set the appropriate TextView's data.
-        if (button == setStartTime) {
+        if (selectedButton == 0) {
             startTime.setText(finalTime);
         } else {
             endTime.setText(finalTime);
