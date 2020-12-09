@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">App</string>
+    <string name="app_name">School Scheduler</string>
     <string name="password">password</string>
     <string name="email">email</string>
     <string name="log_in">log_in</string>
