@@ -12,15 +12,15 @@
         <item
             android:id="@+id/nav_calendar"
             android:icon="@drawable/ic_calendar"
-            android:title="@string/calendar" />
+            android:title="Calendar" />
         <item
             android:id="@+id/nav_task"
             android:icon="@drawable/ic_tasks"
-            android:title="@string/tasks" />
+            android:title="Task" />
         <item
             android:id="@+id/nav_settings"
             android:icon="@drawable/ic_settings"
-            android:title="@string/settings" />
+            android:title="Settings" />
         <item
             android:id="@+id/nav_logout"
             android:icon="@drawable/ic_logout"
