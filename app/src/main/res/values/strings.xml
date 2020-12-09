@@ -66,6 +66,7 @@
     <string name="startText">Start Time</string>
     <string name="endText">End Time</string>
     <string name="addClassButton">Add Class</string>
+    <string name="schedule">Schedule</string>
 
 
 </resources>
