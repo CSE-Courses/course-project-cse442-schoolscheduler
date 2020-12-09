@@ -63,5 +63,13 @@ public class settings extends AppCompatActivity {
             }
         });
 
+        Button notification = findViewById(R.id.button4);
+        notification.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(settings.this,notification_setting.class));
+            }
+        });
+
     }
 }

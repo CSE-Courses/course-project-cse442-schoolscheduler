@@ -47,8 +47,14 @@ public class general extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-
-
+        Button toSch = (Button)findViewById(R.id.sche);
+        toSch.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(general.this,SchedulePage.class);
+                startActivity(intent);
+            }
+        });
 
 
 
@@ -76,7 +82,7 @@ public class general extends AppCompatActivity {
                 //If Setting is pressed
                 if(item.getItemId()==R.id.nav_settings){
                     Toast.makeText(general.this,"Settings",Toast.LENGTH_SHORT).show();
-                    Intent intent = new Intent(general.this, Settings.class);
+                    Intent intent = new Intent(general.this, settings.class);
                     startActivity(intent);
                 }
 

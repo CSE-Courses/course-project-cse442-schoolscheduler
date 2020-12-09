@@ -7,9 +7,6 @@
     android:layout_height="match_parent"
     tools:context=".TaskPage.Task"
     android:id="@+id/taskpage">
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar" />
     <ScrollView
         xmlns:android="http://schemas.android.com/apk/res/android"
         xmlns:tools="http://schemas.android.com/tools"

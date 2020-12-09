@@ -183,8 +183,8 @@ public class Task extends AppCompatActivity  {
         //add button
         fab();
         //toolbar
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
         id_del = new ArrayList<>();
         ttt = new ArrayList<>();
