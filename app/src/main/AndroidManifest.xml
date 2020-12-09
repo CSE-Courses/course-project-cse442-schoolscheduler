@@ -14,7 +14,7 @@
         <activity
             android:name=".DrawerActivity"
             android:label="@string/title_activity_drawer"
-            android:theme="@style/Theme.schoolscheduler.NoActionBar"></activity>
+            android:theme="@style/Theme.schoolscheduler.NoActionBar" />
         <!-- Login/Signup -->
         <activity android:name=".userSignUp" /> <!-- MainPage -->
         <activity android:name=".userLogin">
@@ -34,15 +34,15 @@
         <activity
             android:name=".TaskPage.AddNewTask"
             android:label="Add"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TaskPage.EditTaskContent"
             android:label="Edit"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".TaskPage.Task"
             android:label="Tasks"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
     </application>
 
 </manifest>
