@@ -24,14 +24,20 @@
             <category android:name="android.intent.category.LAUNCHER" />
         </intent-filter>
         </activity>
+        <activity android:name=".CalendarPage"></activity>
+        <activity android:name=".CreateTask"></activity>
+        <activity android:name=".TaskList"></activity>
+        <activity android:name=".Main_Page"></activity>
+        <activity android:name=".SchedulePage"></activity>
+        <activity android:name=".NewCourse"></activity>
 
-        <activity android:name=".CalendarPage" />
-        <activity android:name=".CreateTask" />
-        <activity android:name=".TaskList" />
-        <activity android:name=".Main_Page" /> <!-- Settings Part -->
-        <activity android:name=".profile" />
-        <activity android:name=".general" />
-        <activity android:name=".settings" /> <!-- Task Part -->
+
+        <!--Settings Part-->
+        <activity android:name=".profile"></activity>
+        <activity android:name=".general"></activity>
+        <activity android:name=".settings"></activity>
+
+        <!--Task Part-->
         <activity
             android:name=".TaskPage.AddNewTask"
             android:label="Add"

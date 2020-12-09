@@ -64,6 +64,19 @@
         <item>Ringtone 2</item>
         <item>Ringtone 3</item>
     </string-array>
+    <string name="add_class">Add a class...</string>
+    <string name="course_name">Course Title</string>
+    <string name="abbr_monday">Mon</string>
+    <string name="abbr_tuesday">Tue</string>
+    <string name="abbr_wednesday">Wed</string>
+    <string name="abbr_thursday">Thu</string>
+    <string name="abbr_friday">Fri</string>
+    <string name="abbr_saturday">Sat</string>
+    <string name="abbr_sunday">Sun</string>
+    <string name="startText">Start Time</string>
+    <string name="endText">End Time</string>
+    <string name="addClassButton">Add Class</string>
+    <string name="schedule">Schedule</string>
 
 
 </resources>
