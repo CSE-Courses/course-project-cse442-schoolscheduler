@@ -26,8 +26,11 @@
         <activity android:name=".notification_setting" />
         <activity android:name=".userSignUp" /> <!-- Login/Signup -->
         <activity android:name=".userLogin"> <!-- MainPage -->
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
 
-
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
         </activity>
 
         <activity android:name=".CalendarPage" />
